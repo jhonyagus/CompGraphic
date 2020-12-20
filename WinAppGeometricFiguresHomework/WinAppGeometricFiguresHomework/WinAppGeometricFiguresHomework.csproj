@@ -46,12 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CHexagon.cs" />
+    <Compile Include="COctagono.cs" />
+    <Compile Include="CSquare.cs" />
     <Compile Include="CTriangle.cs" />
+    <Compile Include="frmDecagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDecagono.Designer.cs">
+      <DependentUpon>frmDecagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodecagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodecagono.Designer.cs">
+      <DependentUpon>frmDodecagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHeptagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeptagono.Designer.cs">
+      <DependentUpon>frmHeptagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHexagon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHexagon.Designer.cs">
+      <DependentUpon>frmHexagon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNonagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNonagono.Designer.cs">
+      <DependentUpon>frmNonagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOctagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOctagono.Designer.cs">
+      <DependentUpon>frmOctagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPentagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPentagono.Designer.cs">
+      <DependentUpon>frmPentagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSquare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSquare.Designer.cs">
+      <DependentUpon>frmSquare.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTriangle.cs">
       <SubType>Form</SubType>
@@ -59,13 +110,46 @@
     <Compile Include="frmTriangle.Designer.cs">
       <DependentUpon>frmTriangle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUndecagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUndecagono.Designer.cs">
+      <DependentUpon>frmUndecagono.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDecagono.resx">
+      <DependentUpon>frmDecagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodecagono.resx">
+      <DependentUpon>frmDodecagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHeptagono.resx">
+      <DependentUpon>frmHeptagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHexagon.resx">
+      <DependentUpon>frmHexagon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNonagono.resx">
+      <DependentUpon>frmNonagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOctagono.resx">
+      <DependentUpon>frmOctagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPentagono.resx">
+      <DependentUpon>frmPentagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSquare.resx">
+      <DependentUpon>frmSquare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTriangle.resx">
       <DependentUpon>frmTriangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUndecagono.resx">
+      <DependentUpon>frmUndecagono.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

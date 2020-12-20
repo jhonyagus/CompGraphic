@@ -42,7 +42,7 @@
             // 
             // btnTriangle
             // 
-            this.btnTriangle.Location = new System.Drawing.Point(108, 82);
+            this.btnTriangle.Location = new System.Drawing.Point(60, 26);
             this.btnTriangle.Name = "btnTriangle";
             this.btnTriangle.Size = new System.Drawing.Size(178, 41);
             this.btnTriangle.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             // btnSquare
             // 
-            this.btnSquare.Location = new System.Drawing.Point(108, 129);
+            this.btnSquare.Location = new System.Drawing.Point(60, 73);
             this.btnSquare.Name = "btnSquare";
             this.btnSquare.Size = new System.Drawing.Size(178, 41);
             this.btnSquare.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // btnPentagon
             // 
-            this.btnPentagon.Location = new System.Drawing.Point(108, 176);
+            this.btnPentagon.Location = new System.Drawing.Point(60, 120);
             this.btnPentagon.Name = "btnPentagon";
             this.btnPentagon.Size = new System.Drawing.Size(178, 41);
             this.btnPentagon.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // btnHexagon
             // 
-            this.btnHexagon.Location = new System.Drawing.Point(108, 223);
+            this.btnHexagon.Location = new System.Drawing.Point(60, 167);
             this.btnHexagon.Name = "btnHexagon";
             this.btnHexagon.Size = new System.Drawing.Size(178, 41);
             this.btnHexagon.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // btnHeptagon
             // 
-            this.btnHeptagon.Location = new System.Drawing.Point(108, 270);
+            this.btnHeptagon.Location = new System.Drawing.Point(60, 214);
             this.btnHeptagon.Name = "btnHeptagon";
             this.btnHeptagon.Size = new System.Drawing.Size(178, 41);
             this.btnHeptagon.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             // btnOctagon
             // 
-            this.btnOctagon.Location = new System.Drawing.Point(108, 317);
+            this.btnOctagon.Location = new System.Drawing.Point(60, 261);
             this.btnOctagon.Name = "btnOctagon";
             this.btnOctagon.Size = new System.Drawing.Size(178, 41);
             this.btnOctagon.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             // btnNonagon
             // 
-            this.btnNonagon.Location = new System.Drawing.Point(108, 366);
+            this.btnNonagon.Location = new System.Drawing.Point(60, 310);
             this.btnNonagon.Name = "btnNonagon";
             this.btnNonagon.Size = new System.Drawing.Size(178, 41);
             this.btnNonagon.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             // btnDecagon
             // 
-            this.btnDecagon.Location = new System.Drawing.Point(108, 413);
+            this.btnDecagon.Location = new System.Drawing.Point(60, 357);
             this.btnDecagon.Name = "btnDecagon";
             this.btnDecagon.Size = new System.Drawing.Size(178, 41);
             this.btnDecagon.TabIndex = 7;
@@ -115,7 +115,7 @@
             // 
             // btnUndecagon
             // 
-            this.btnUndecagon.Location = new System.Drawing.Point(108, 460);
+            this.btnUndecagon.Location = new System.Drawing.Point(60, 404);
             this.btnUndecagon.Name = "btnUndecagon";
             this.btnUndecagon.Size = new System.Drawing.Size(178, 41);
             this.btnUndecagon.TabIndex = 8;
@@ -124,7 +124,7 @@
             // 
             // btnDodecagon
             // 
-            this.btnDodecagon.Location = new System.Drawing.Point(108, 507);
+            this.btnDodecagon.Location = new System.Drawing.Point(60, 451);
             this.btnDodecagon.Name = "btnDodecagon";
             this.btnDodecagon.Size = new System.Drawing.Size(178, 41);
             this.btnDodecagon.TabIndex = 9;
@@ -135,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 589);
+            this.ClientSize = new System.Drawing.Size(290, 530);
             this.Controls.Add(this.btnDodecagon);
             this.Controls.Add(this.btnUndecagon);
             this.Controls.Add(this.btnDecagon);

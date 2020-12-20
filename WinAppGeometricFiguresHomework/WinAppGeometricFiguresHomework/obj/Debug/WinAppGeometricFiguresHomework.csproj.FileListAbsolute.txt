@@ -8,3 +8,14 @@ C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppGeometricFigures
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.csproj.GenerateResource.cache
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.exe
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.pdb
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\bin\Debug\WinAppGeometricFiguresHomework.exe.config
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\bin\Debug\WinAppGeometricFiguresHomework.exe
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\bin\Debug\WinAppGeometricFiguresHomework.pdb
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.csprojAssemblyReference.cache
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmMenu.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmTriangle.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.Properties.Resources.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.csproj.GenerateResource.cache
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.csproj.CoreCompileInputs.cache
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.exe
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.pdb
