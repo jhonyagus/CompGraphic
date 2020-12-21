@@ -1,4 +1,4 @@
-﻿namespace WinAppGeometricFiguresV2
+﻿namespace WinAppGeometricFiguresHomework
 {
     partial class frmSquare
     {

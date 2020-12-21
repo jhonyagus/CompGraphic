@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinAppGeometricFiguresV2
+namespace WinAppGeometricFiguresHomework
 {
     public partial class frmOctagono : Form
     {
+        COctagono ObjOctagon = new COctagono();
         public frmOctagono()
         {
             InitializeComponent();
@@ -19,7 +20,22 @@ namespace WinAppGeometricFiguresV2
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
+            ObjOctagon.ReadData(txtSide);
+            ObjOctagon.PerimeterOctagon();
+            ObjOctagon.AreaOctagon();
+            ObjOctagon.PrintData(txtPerimeter, txtArea);
+            ObjOctagon.GraphShape(picCanvas);
+        }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ObjOctagon.InitializeData(txtSide, txtPerimeter,
+               txtArea, picCanvas);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

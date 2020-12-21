@@ -3,29 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using System.Drawing;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace WinAppGeometricFiguresHomework
 {
-    class CHexagon
+    class CPentagon
     {
         // Datos miembro - Atributos.
-        private float mSide, mApothem, mSegmentB, mAngle;
+        private float mSide, mApothem, mSegmentB, mAngle, mSegmentA, mAngleA, mSegmentC, mSegmentD;
         private float mPerimeter, mArea;
 
         // Datos miembro que operan con el modo gráfico.
         private Graphics mGraph;
         private Pen mPen;
         private const float SF = 20;
-        private PointF mN, mS, mM, mP, mR, mQ;
-        private PointF mA, mB, mC, mD, mE, mF;
+        private PointF mA, mB, mC, mD, mE;
 
         // Funciones miembro - Métodos.
 
         // Constructor por defecto.
-        public CHexagon()
+        public CPentagon()
         {
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
@@ -37,13 +35,13 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite calcular el perímetro del triángulo.
-        public void PerimeterHexagon()
+        public void PerimeterPentagon()
         {
 
         }
 
         // Función que permite calcular el área del triángulo.
-        public void AreaHexagon()
+        public void AreaPentagon()
         {
 
         }
@@ -78,16 +76,19 @@ namespace WinAppGeometricFiguresHomework
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
-            mAngle = 60.0f * (float)Math.PI / 180.0f;
+            mAngle = 36.0f * (float)Math.PI / 180.0f;
+            mAngleA = 72.0f * (float)Math.PI / 180.0f;
             mSegmentB = mSide * (float)Math.Cos(mAngle);
-            mApothem = mSide * (float)Math.Sin(mAngle);            
+            mSegmentA = mSide * (float)Math.Sin(mAngle);
+            mSegmentC = mSide * (float)Math.Cos(mAngleA);
+            mSegmentD = mSide * (float)Math.Sin(mAngleA);
 
             mA.X = mSegmentB; mA.Y = 0;
-            mB.X = mSide + mSegmentB; mB.Y = 0;
-            mC.X = 0; mC.Y = mApothem;
-            mD.X = mSide + 2.0f * mSegmentB; mD.Y = mApothem;
-            mE.X = mSegmentB; mE.Y = 2.0f * mApothem;
-            mF.X = mSide + mSegmentB; mF.Y = 2.0f * mApothem;
+            mB.X = 0; mB.Y = mSegmentA;
+            mC.X = mSegmentC; mC.Y = mSegmentD + mSegmentA;
+            mD.X = mSide + mSegmentC; mD.Y = mSegmentD + mSegmentA;
+            mE.X = 2.0f * mSegmentC + mSide; mE.Y = mSegmentA;
+            
         }
 
         // Función que permite graficar un triángulo en base a los valores de los tres 
@@ -100,12 +101,10 @@ namespace WinAppGeometricFiguresHomework
 
             mPen = new Pen(Color.Blue, 3);
             mGraph.DrawLine(mPen, mA.X * SF, mA.Y * SF, mB.X * SF, mB.Y * SF);
-            mGraph.DrawLine(mPen, mA.X * SF, mA.Y * SF, mC.X * SF, mC.Y * SF);
-            mGraph.DrawLine(mPen, mB.X * SF, mB.Y * SF, mD.X * SF, mD.Y * SF);
-            mGraph.DrawLine(mPen, mE.X * SF, mE.Y * SF, mF.X * SF, mF.Y * SF);
-            mGraph.DrawLine(mPen, mC.X * SF, mC.Y * SF, mE.X * SF, mE.Y * SF);
-            mGraph.DrawLine(mPen, mD.X * SF, mD.Y * SF, mF.X * SF, mF.Y * SF);            
+            mGraph.DrawLine(mPen, mB.X * SF, mB.Y * SF, mC.X * SF, mC.Y * SF);
+            mGraph.DrawLine(mPen, mC.X * SF, mC.Y * SF, mD.X * SF, mD.Y * SF);
+            mGraph.DrawLine(mPen, mD.X * SF, mD.Y * SF, mE.X * SF, mE.Y * SF);
+            mGraph.DrawLine(mPen, mE.X * SF, mE.Y * SF, mA.X * SF, mA.Y * SF);
         }
-
     }
 }

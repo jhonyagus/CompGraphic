@@ -22,5 +22,59 @@ namespace WinAppGeometricFiguresHomework
             frmTriangle ObjForm = new frmTriangle();
             ObjForm.Show();
         }
+
+        private void btnSquare_Click(object sender, EventArgs e)
+        {
+            frmSquare ObjForm = new frmSquare();
+            ObjForm.Show();
+        }
+
+        private void btnHexagon_Click(object sender, EventArgs e)
+        {
+            frmHexagon ObjForm = new frmHexagon();
+            ObjForm.Show();
+        }
+
+        private void btnOctagon_Click(object sender, EventArgs e)
+        {
+            frmOctagono ObjForm = new frmOctagono();
+            ObjForm.Show();
+        }
+
+        private void btnPentagon_Click(object sender, EventArgs e)
+        {
+            frmPentagono ObjForm = new frmPentagono();
+            ObjForm.Show();
+        }
+
+        private void btnHeptagon_Click(object sender, EventArgs e)
+        {
+            frmHeptagono ObjForm = new frmHeptagono();
+            ObjForm.Show();
+        }
+
+        private void btnNonagon_Click(object sender, EventArgs e)
+        {
+            frmNonagono ObjForm = new frmNonagono();
+            ObjForm.Show();
+        }
+
+        private void btnDecagon_Click(object sender, EventArgs e)
+        {
+            frmDecagono ObjForm = new frmDecagono();
+            ObjForm.Show();
+        }
+
+        private void btnUndecagon_Click(object sender, EventArgs e)
+        {
+            frmUndecagono ObjForm = new frmUndecagono();
+            ObjForm.Show();
+        }
+
+        private void btnDodecagon_Click(object sender, EventArgs e)
+        {
+            frmDodecagono ObjForm = new frmDodecagono();
+            ObjForm.Show();
+        }
     }
 }

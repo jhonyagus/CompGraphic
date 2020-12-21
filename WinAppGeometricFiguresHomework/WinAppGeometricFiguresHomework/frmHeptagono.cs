@@ -12,9 +12,30 @@ namespace WinAppGeometricFiguresHomework
 {
     public partial class frmHeptagono : Form
     {
+        CHeptagon ObjHeptagon = new CHeptagon();
         public frmHeptagono()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            picCanvas.Refresh();
+            ObjHeptagon.ReadData(txtSide);
+            ObjHeptagon.PerimeterHeptagon();
+            ObjHeptagon.AreaHeptagon();
+            ObjHeptagon.PrintData(txtPerimeter, txtArea);
+            ObjHeptagon.GraphShape(picCanvas);
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ObjHeptagon.InitializeData(txtSide, txtPerimeter, txtArea, picCanvas);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

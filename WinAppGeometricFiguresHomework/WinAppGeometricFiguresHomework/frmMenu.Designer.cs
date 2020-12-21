@@ -58,6 +58,7 @@
             this.btnSquare.TabIndex = 1;
             this.btnSquare.Text = "Cuadrado";
             this.btnSquare.UseVisualStyleBackColor = true;
+            this.btnSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
             // btnPentagon
             // 
@@ -67,6 +68,7 @@
             this.btnPentagon.TabIndex = 2;
             this.btnPentagon.Text = "Pentágono";
             this.btnPentagon.UseVisualStyleBackColor = true;
+            this.btnPentagon.Click += new System.EventHandler(this.btnPentagon_Click);
             // 
             // btnHexagon
             // 
@@ -76,6 +78,7 @@
             this.btnHexagon.TabIndex = 3;
             this.btnHexagon.Text = "Hexágono";
             this.btnHexagon.UseVisualStyleBackColor = true;
+            this.btnHexagon.Click += new System.EventHandler(this.btnHexagon_Click);
             // 
             // btnHeptagon
             // 
@@ -85,6 +88,7 @@
             this.btnHeptagon.TabIndex = 4;
             this.btnHeptagon.Text = "Heptágono";
             this.btnHeptagon.UseVisualStyleBackColor = true;
+            this.btnHeptagon.Click += new System.EventHandler(this.btnHeptagon_Click);
             // 
             // btnOctagon
             // 
@@ -94,6 +98,7 @@
             this.btnOctagon.TabIndex = 5;
             this.btnOctagon.Text = "Octágono";
             this.btnOctagon.UseVisualStyleBackColor = true;
+            this.btnOctagon.Click += new System.EventHandler(this.btnOctagon_Click);
             // 
             // btnNonagon
             // 
@@ -103,6 +108,7 @@
             this.btnNonagon.TabIndex = 6;
             this.btnNonagon.Text = "Nonágono";
             this.btnNonagon.UseVisualStyleBackColor = true;
+            this.btnNonagon.Click += new System.EventHandler(this.btnNonagon_Click);
             // 
             // btnDecagon
             // 
@@ -112,6 +118,7 @@
             this.btnDecagon.TabIndex = 7;
             this.btnDecagon.Text = "Decágono";
             this.btnDecagon.UseVisualStyleBackColor = true;
+            this.btnDecagon.Click += new System.EventHandler(this.btnDecagon_Click);
             // 
             // btnUndecagon
             // 
@@ -121,6 +128,7 @@
             this.btnUndecagon.TabIndex = 8;
             this.btnUndecagon.Text = "Undecágono";
             this.btnUndecagon.UseVisualStyleBackColor = true;
+            this.btnUndecagon.Click += new System.EventHandler(this.btnUndecagon_Click);
             // 
             // btnDodecagon
             // 
@@ -130,6 +138,7 @@
             this.btnDodecagon.TabIndex = 9;
             this.btnDodecagon.Text = "Dodecágono";
             this.btnDodecagon.UseVisualStyleBackColor = true;
+            this.btnDodecagon.Click += new System.EventHandler(this.btnDodecagon_Click);
             // 
             // frmMenu
             // 

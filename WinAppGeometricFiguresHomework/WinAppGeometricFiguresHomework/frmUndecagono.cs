@@ -12,9 +12,30 @@ namespace WinAppGeometricFiguresHomework
 {
     public partial class frmUndecagono : Form
     {
+        CUndecagon ObjUndecagon = new CUndecagon();
         public frmUndecagono()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            picCanvas.Refresh();
+            ObjUndecagon.ReadData(txtSide);
+            ObjUndecagon.PerimeterUndecagon();
+            ObjUndecagon.AreaUndecagon();
+            ObjUndecagon.PrintData(txtPerimeter, txtArea);
+            ObjUndecagon.GraphShape(picCanvas);
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ObjUndecagon.InitializeData(txtSide,txtPerimeter,txtArea,picCanvas);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

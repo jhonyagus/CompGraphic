@@ -3,28 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace WinAppGeometricFiguresHomework
 {
-    class COctagono
+    class CDodecagon
     {
         // Datos miembro - Atributos.
-        private float mSide, mApothem, mSegmentB, mAngle1;
-        private float mPerimeter, mArea;
+        private float mSide, mSegmentA, mSegmentB, mSegmentC, mAngleA, mAngleB;
+        private float mPerimeter, mArea, mApothem;
 
         // Datos miembro que operan con el modo gráfico.
         private Graphics mGraph;
         private Pen mPen;
         private const float SF = 20;
-        //private PointF mN, mS, mM, mP, mR, mQ;
-        private PointF mA, mB, mC, mD, mE, mF, mG, mH;
+        private PointF mA, mB, mC, mD, mE, mF, mG, mH, mI, mJ, mK, mL;
 
         // Funciones miembro - Métodos.
 
         // Constructor por defecto.
-        public COctagono()
+        public CDodecagon()
         {
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
@@ -36,22 +35,22 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite calcular el perímetro del triángulo.
-        public void PerimeterOctagon()
+        public void PerimeterDodecagon()
         {
-            mPerimeter = 8 * mSide;
+            mPerimeter = 12 * mSide;
         }
 
         // Función que permite calcular el área del triángulo.
-        public void AreaOctagon()
+        public void AreaDodecagon()
         {
-            float mAngle3 = 22.5f * (float)Math.PI / 180.0f;
-            mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
+            //float mAngle3 = 22.5f * (float)Math.PI / 180.0f;
+            //  mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
 
             //mAngle1 = 45.0f * (float)math.PI / 180.0f;
             //mSegmentB = mSide * (float)Math.cos(mAngle1);
             //
 
-            mArea = mPerimeter * mApothem / 2.0f;
+            // mArea = mPerimeter * mApothem / 2.0f;
         }
 
         // Función que permite imprimir el perímetro y el área del triángulo.
@@ -84,19 +83,24 @@ namespace WinAppGeometricFiguresHomework
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
-            mAngle1 = 45.0f * (float)Math.PI / 180.0f; //convertir a radianes
-            mSegmentB = mSide * (float)Math.Cos(mAngle1);
-            //mApothem = mSide * (float)Math.Sin(mAngle1);
-
-            mA.X = mSegmentB; mA.Y = 0;
-            mB.X = mSide + mSegmentB; mB.Y = 0;
-            mC.X = mSide + 2.0f * mSegmentB; mC.Y = mSegmentB;
-            mD.X = mSide + 2.0f * mSegmentB; mD.Y = mSide + mSegmentB;
-            mE.X = mSide + mSegmentB; mE.Y = mSide + 2.0f * mSegmentB;
-            mF.X = mSegmentB; mF.Y = mSide + 2.0f * mSegmentB;
-            mG.X = 0; mG.Y = mSide + mSegmentB;
-            mH.X = 0; mH.Y = mSegmentB;
-
+            mAngleA = 15.0f * (float)Math.PI / 180.0f; //convertir a radianes
+            mAngleB = 45.0f * (float)Math.PI / 180.0f; //convertir a radianes
+            mSegmentA = mSide * (float)Math.Sin(mAngleA);
+            mSegmentB = mSide * (float)Math.Cos(mAngleA);
+            mSegmentC = mSide * (float)Math.Sin(mAngleB);
+           
+            mA.X = mSegmentA + mSegmentB + mSegmentC; mA.Y = 0;
+            mB.X = mSegmentA + mSegmentC; mB.Y = mSegmentA;
+            mC.X = mSegmentA; mC.Y = mSegmentA + mSegmentC;
+            mD.X = 0; mD.Y = mC.Y + mSegmentB;
+            mE.X = mC.X; mE.Y = mD.Y + mSegmentB;
+            mF.X = mB.X; mF.Y = mE.Y + mSegmentC;
+            mG.X = mA.X; mG.Y = mF.Y+mSegmentA;
+            mH.X = mG.X + mSegmentB; mH.Y = mF.Y;
+            mI.X = mH.X + mSegmentC; mI.Y = mE.Y;
+            mJ.X = mI.X + mSegmentA; mJ.Y = mD.Y;
+            mK.X = mI.X; mK.Y = mC.Y;
+            mL.X = mH.X; mL.Y = mB.Y;
         }
         // Función que permite graficar un triángulo en base a los valores de los tres 
         // vértices representados por tres puntos en un plano.
@@ -108,14 +112,18 @@ namespace WinAppGeometricFiguresHomework
 
             mPen = new Pen(Color.Blue, 3);
             mGraph.DrawLine(mPen, mA.X * SF, mA.Y * SF, mB.X * SF, mB.Y * SF);
-            mGraph.DrawLine(mPen, mA.X * SF, mA.Y * SF, mH.X * SF, mH.Y * SF);
             mGraph.DrawLine(mPen, mB.X * SF, mB.Y * SF, mC.X * SF, mC.Y * SF);
-            mGraph.DrawLine(mPen, mG.X * SF, mG.Y * SF, mH.X * SF, mH.Y * SF);
             mGraph.DrawLine(mPen, mC.X * SF, mC.Y * SF, mD.X * SF, mD.Y * SF);
-            mGraph.DrawLine(mPen, mF.X * SF, mF.Y * SF, mG.X * SF, mG.Y * SF);
-            mGraph.DrawLine(mPen, mE.X * SF, mE.Y * SF, mF.X * SF, mF.Y * SF);
             mGraph.DrawLine(mPen, mD.X * SF, mD.Y * SF, mE.X * SF, mE.Y * SF);
+            mGraph.DrawLine(mPen, mE.X * SF, mE.Y * SF, mF.X * SF, mF.Y * SF);
+            mGraph.DrawLine(mPen, mF.X * SF, mF.Y * SF, mG.X * SF, mG.Y * SF);
+            mGraph.DrawLine(mPen, mG.X * SF, mG.Y * SF, mH.X * SF, mH.Y * SF);
+            mGraph.DrawLine(mPen, mH.X * SF, mH.Y * SF, mI.X * SF, mI.Y * SF);
+            mGraph.DrawLine(mPen, mI.X * SF, mI.Y * SF, mJ.X * SF, mJ.Y * SF);
+            mGraph.DrawLine(mPen, mJ.X * SF, mJ.Y * SF, mK.X * SF, mK.Y * SF);
+            mGraph.DrawLine(mPen, mK.X * SF, mK.Y * SF, mL.X * SF, mL.Y * SF);
+            mGraph.DrawLine(mPen, mL.X * SF, mL.Y * SF, mA.X * SF, mA.Y * SF);
         }
-
+    
     }
 }

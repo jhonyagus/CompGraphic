@@ -46,10 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CDecagon.cs" />
+    <Compile Include="CDodecagon.cs" />
+    <Compile Include="CHeptagon.cs" />
     <Compile Include="CHexagon.cs" />
+    <Compile Include="CNonagon.cs" />
     <Compile Include="COctagono.cs" />
+    <Compile Include="CPentagon.cs" />
     <Compile Include="CSquare.cs" />
     <Compile Include="CTriangle.cs" />
+    <Compile Include="CUndecagon.cs" />
     <Compile Include="frmDecagono.cs">
       <SubType>Form</SubType>
     </Compile>

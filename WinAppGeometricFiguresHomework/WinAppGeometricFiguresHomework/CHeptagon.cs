@@ -3,29 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using System.Drawing;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace WinAppGeometricFiguresHomework
 {
-    class CHexagon
+    class CHeptagon
     {
         // Datos miembro - Atributos.
-        private float mSide, mApothem, mSegmentB, mAngle;
-        private float mPerimeter, mArea;
+        private float mSide, mSegmentA, mSegmentB, mSegmentC, mSegmentD, mSegmentE,mSegmentF, mAngleA, mAngleB, mAngleC;
+        private float mPerimeter, mArea, mApothem;
 
         // Datos miembro que operan con el modo gráfico.
         private Graphics mGraph;
         private Pen mPen;
         private const float SF = 20;
-        private PointF mN, mS, mM, mP, mR, mQ;
-        private PointF mA, mB, mC, mD, mE, mF;
+        private PointF mA, mB, mC, mD, mE, mF, mG;
 
         // Funciones miembro - Métodos.
 
         // Constructor por defecto.
-        public CHexagon()
+        public CHeptagon()
         {
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
@@ -37,15 +35,22 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite calcular el perímetro del triángulo.
-        public void PerimeterHexagon()
+        public void PerimeterHeptagon()
         {
-
+            mPerimeter = 7 * mSide;
         }
 
         // Función que permite calcular el área del triángulo.
-        public void AreaHexagon()
+        public void AreaHeptagon()
         {
+            //float mAngle3 = 22.5f * (float)Math.PI / 180.0f;
+          //  mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
 
+            //mAngle1 = 45.0f * (float)math.PI / 180.0f;
+            //mSegmentB = mSide * (float)Math.cos(mAngle1);
+            //
+
+           // mArea = mPerimeter * mApothem / 2.0f;
         }
 
         // Función que permite imprimir el perímetro y el área del triángulo.
@@ -74,22 +79,28 @@ namespace WinAppGeometricFiguresHomework
             picCanvas.Refresh();
         }
 
-        // Función que permite calcular los valores de los tres vértices del triángulo,
+        // Función que permite calcular los valores de los ocho vértices del octagono,
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
-            mAngle = 60.0f * (float)Math.PI / 180.0f;
-            mSegmentB = mSide * (float)Math.Cos(mAngle);
-            mApothem = mSide * (float)Math.Sin(mAngle);            
+            mAngleA = 25.7f * (float)Math.PI / 180.0f; //convertir a radianes
+            mAngleB = 12.8f * (float)Math.PI / 180.0f; //convertir a radianes
+            mAngleC = 51.4f * (float)Math.PI / 180.0f; //convertir a radianes
+            mSegmentB = mSide * (float)Math.Cos(mAngleA);
+            mSegmentA = mSide * (float)Math.Sin(mAngleA);
+            mSegmentC = mSide * (float)Math.Sin(mAngleB);
+            mSegmentE = mSide * (float)Math.Cos(mAngleB);
+            mSegmentD = mSide * (float)Math.Sin(mAngleC);
+            mSegmentF = mSide * (float)Math.Cos(mAngleC);
 
-            mA.X = mSegmentB; mA.Y = 0;
-            mB.X = mSide + mSegmentB; mB.Y = 0;
-            mC.X = 0; mC.Y = mApothem;
-            mD.X = mSide + 2.0f * mSegmentB; mD.Y = mApothem;
-            mE.X = mSegmentB; mE.Y = 2.0f * mApothem;
-            mF.X = mSide + mSegmentB; mF.Y = 2.0f * mApothem;
+            mA.X = mSegmentB + mSegmentC; mA.Y = 0;
+            mB.X = mSegmentC; mB.Y = mSegmentA;
+            mC.X = 0; mC.Y = mSegmentA + mSegmentE;
+            mD.X = mSegmentF; mD.Y = mSegmentA + mSegmentE + mSegmentD;
+            mE.X = mSide + mSegmentF; mE.Y = mSegmentA + mSegmentE + mSegmentD;
+            mF.X = 2.0f * mSegmentF + mSegmentE; mF.Y = mSegmentA + mSegmentE;
+            mG.X = 2.0f * mSegmentB + mSegmentC; mG.Y = mSegmentA;
         }
-
         // Función que permite graficar un triángulo en base a los valores de los tres 
         // vértices representados por tres puntos en un plano.
         public void GraphShape(PictureBox picCanvas)
@@ -100,12 +111,12 @@ namespace WinAppGeometricFiguresHomework
 
             mPen = new Pen(Color.Blue, 3);
             mGraph.DrawLine(mPen, mA.X * SF, mA.Y * SF, mB.X * SF, mB.Y * SF);
-            mGraph.DrawLine(mPen, mA.X * SF, mA.Y * SF, mC.X * SF, mC.Y * SF);
-            mGraph.DrawLine(mPen, mB.X * SF, mB.Y * SF, mD.X * SF, mD.Y * SF);
+            mGraph.DrawLine(mPen, mB.X * SF, mB.Y * SF, mC.X * SF, mC.Y * SF);
+            mGraph.DrawLine(mPen, mC.X * SF, mC.Y * SF, mD.X * SF, mD.Y * SF);
+            mGraph.DrawLine(mPen, mD.X * SF, mD.Y * SF, mE.X * SF, mE.Y * SF);
             mGraph.DrawLine(mPen, mE.X * SF, mE.Y * SF, mF.X * SF, mF.Y * SF);
-            mGraph.DrawLine(mPen, mC.X * SF, mC.Y * SF, mE.X * SF, mE.Y * SF);
-            mGraph.DrawLine(mPen, mD.X * SF, mD.Y * SF, mF.X * SF, mF.Y * SF);            
+            mGraph.DrawLine(mPen, mF.X * SF, mF.Y * SF, mG.X * SF, mG.Y * SF);
+            mGraph.DrawLine(mPen, mG.X * SF, mG.Y * SF, mA.X * SF, mA.Y * SF);
         }
-
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinAppGeometricFiguresV2
+namespace WinAppGeometricFiguresHomework
 {
     public partial class frmSquare : Form
     {

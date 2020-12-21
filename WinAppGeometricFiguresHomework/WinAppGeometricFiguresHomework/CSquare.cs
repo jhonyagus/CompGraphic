@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace WinAppGeometricFiguresV2
+namespace WinAppGeometricFiguresHomework
 {
     class CSquare
     {
