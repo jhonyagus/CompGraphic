@@ -38,3 +38,12 @@ C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\versions\WinAppGeometr
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\versions\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmSquare.resources
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\versions\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmHexagon.resources
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\versions\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmOctagono.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmDecagono.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmDodecagono.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmHeptagono.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmHexagon.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmNonagono.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmOctagono.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmPentagono.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmSquare.resources
+C:\Users\picad\Desktop\Cuarto N\Grafica\DeberGraph\CompGraphic\WinAppGeometricFiguresHomework\WinAppGeometricFiguresHomework\obj\Debug\WinAppGeometricFiguresHomework.frmUndecagono.resources

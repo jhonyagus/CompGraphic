@@ -45,14 +45,13 @@ namespace WinAppGeometricFiguresHomework
         // Función que permite calcular el área del triángulo.
         public void AreaUndecagon()
         {
-            //float mAngle3 = 22.5f * (float)Math.PI / 180.0f;
-            //  mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
+            //float mAngle3 = 30.0f * (float)Math.PI / 180.0f;
+            //mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
 
-            //mAngle1 = 45.0f * (float)math.PI / 180.0f;
-            //mSegmentB = mSide * (float)Math.cos(mAngle1);
-            //
+            //mAngle = 60.0f * (float)Math.PI / 180.0f;
+            //mSegmentB = mSide * (float)Math.Cos(mAngle);
 
-            // mArea = mPerimeter * mApothem / 2.0f;
+            //mArea = mPerimeter * mApothem / 2.0f;
         }
 
         // Función que permite imprimir el perímetro y el área del triángulo.
