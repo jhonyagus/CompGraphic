@@ -21,10 +21,19 @@ namespace WinAppGeometricFiguresHomework
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             ObjOctagon.ReadData(txtSide);
-            ObjOctagon.PerimeterOctagon();
-            ObjOctagon.AreaOctagon();
-            ObjOctagon.PrintData(txtPerimeter, txtArea);
-            ObjOctagon.GraphShape(picCanvas);
+            if (float.Parse(txtSide.Text) > 0)
+            {
+                ObjOctagon.PerimeterOctagon();
+                ObjOctagon.AreaOctagon();
+                ObjOctagon.PrintData(txtPerimeter, txtArea);
+                ObjOctagon.GraphShape(picCanvas);
+            }
+            else
+            {
+                MessageBox.Show("Error...en el ingreso de datos",
+                             "Mensaje de error");
+            }
+            
         }
 
         private void btnReset_Click(object sender, EventArgs e)
