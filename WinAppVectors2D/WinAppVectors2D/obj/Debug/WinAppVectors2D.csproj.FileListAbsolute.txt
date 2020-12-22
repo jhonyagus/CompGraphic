@@ -1,0 +1,9 @@
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\bin\Debug\WinAppVectors2D.exe.config
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\bin\Debug\WinAppVectors2D.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\bin\Debug\WinAppVectors2D.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\obj\Debug\WinAppVectors2D.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\obj\Debug\WinAppVectors2D.frmVectors2D.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\obj\Debug\WinAppVectors2D.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\obj\Debug\WinAppVectors2D.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\obj\Debug\WinAppVectors2D.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\WinAppVectors2D\WinAppVectors2D\obj\Debug\WinAppVectors2D.pdb
