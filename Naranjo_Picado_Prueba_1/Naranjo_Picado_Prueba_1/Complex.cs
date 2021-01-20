@@ -12,7 +12,7 @@ namespace Naranjo_Picado_Prueba_1
     class Complex
     {
         private float mX, mY, mModule, mAngle;
-
+        
         private Graphics mGraph;
         private const float SF = 20;
         private Pen mPen;
@@ -131,7 +131,7 @@ namespace Naranjo_Picado_Prueba_1
         public void DrawVector(Complex V, Color color, PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
-            mPen = new Pen(color, 4);
+            mPen = new Pen(color, 3.0f);
             mPen.StartCap = LineCap.RoundAnchor; 
             mPen.EndCap = LineCap.ArrowAnchor; 
 

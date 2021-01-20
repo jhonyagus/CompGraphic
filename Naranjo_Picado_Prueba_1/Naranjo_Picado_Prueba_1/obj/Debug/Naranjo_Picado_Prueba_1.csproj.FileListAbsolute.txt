@@ -8,3 +8,12 @@ C:\Users\picad\source\repos\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\
 C:\Users\picad\source\repos\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.csproj.CoreCompileInputs.cache
 C:\Users\picad\source\repos\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.exe
 C:\Users\picad\source\repos\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\bin\Debug\Naranjo_Picado_Prueba_1.exe.config
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\bin\Debug\Naranjo_Picado_Prueba_1.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\bin\Debug\Naranjo_Picado_Prueba_1.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.Form1.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Naranjo_Picado_Prueba_1\Naranjo_Picado_Prueba_1\obj\Debug\Naranjo_Picado_Prueba_1.pdb
