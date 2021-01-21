@@ -1,0 +1,9 @@
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\bin\Debug\NaranjoPicado_Examen.exe.config
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\bin\Debug\NaranjoPicado_Examen.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\bin\Debug\NaranjoPicado_Examen.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\obj\Debug\NaranjoPicado_Examen.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\obj\Debug\NaranjoPicado_Examen.frmPentagon.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\obj\Debug\NaranjoPicado_Examen.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\obj\Debug\NaranjoPicado_Examen.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\obj\Debug\NaranjoPicado_Examen.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\NaranjoPicado_Examen\obj\Debug\NaranjoPicado_Examen.pdb
