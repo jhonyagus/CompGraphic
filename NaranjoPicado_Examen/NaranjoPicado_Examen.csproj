@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CPentagon.cs" />
+    <Compile Include="CRecta.cs" />
     <Compile Include="frmPentagon.cs">
       <SubType>Form</SubType>
     </Compile>
