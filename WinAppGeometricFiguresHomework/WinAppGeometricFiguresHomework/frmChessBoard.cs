@@ -22,5 +22,15 @@ namespace WinAppGeometricFiguresHomework
         {
             A.PlotShape(picCanvas);
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            picCanvas.Refresh();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

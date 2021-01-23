@@ -77,6 +77,7 @@
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnReset
             // 
@@ -86,6 +87,7 @@
             this.btnReset.TabIndex = 1;
             this.btnReset.Text = "Resetear";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnGraphic
             // 

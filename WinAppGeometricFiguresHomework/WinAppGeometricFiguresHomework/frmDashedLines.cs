@@ -12,9 +12,25 @@ namespace WinAppGeometricFiguresHomework
 {
     public partial class frmDashedLines : Form
     {
+        CDashedLines Obj = new CDashedLines();
         public frmDashedLines()
         {
             InitializeComponent();
+        }
+
+        private void btnDraw_Click(object sender, EventArgs e)
+        {
+            Obj.PlotShape(picCanvas);
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            picCanvas.Refresh();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

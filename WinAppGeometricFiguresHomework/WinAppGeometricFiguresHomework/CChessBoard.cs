@@ -15,9 +15,11 @@ namespace WinAppGeometricFiguresHomework
         private Rectangle d;
 
         private Graphics mGraph;
-        private const float SF = 20;
+        private const float SF = 1;
         private Pen mPen;
         private PointF mP1, mP2, mP3;
+        PointF A, B, C, D;
+        PointF A1, B1, C1, D1;
 
         // Funciones miembro - Métodos.
 
@@ -38,65 +40,53 @@ namespace WinAppGeometricFiguresHomework
             //Resolucion 600x600
             //Eje x: 0,1,2,..,599
             //Eje y: 0,1,2,...,599
-            maxX = d.X - 1; maxY = d.Y - 1;
-            //maxX = 800 - 1; maxY = 600 - 1;
+            maxX = d.X-1; maxY = d.Y-1;
+            //maxX = 600 - 1; maxY = 600 - 1;
             minMaxXY = Math.Min(maxX, maxY);
-            //xCenter = 400, yCenter = 300
+            //xCenter = 300, yCenter = 300
             xCenter = maxX / 2; yCenter = maxY / 2;
         }
 
-        private int iX(float x)
+        public PointF iX(PointF V)
         {
-            return ((int)Math.Round(x));
-        }
-
-        private int iY(float y)
-        {
-            return (maxY - (int)Math.Round(y));
+            return new PointF((float)V.X * SF, (-1) * (float)V.Y * SF + 600);
         }
 
         public void PlotShape(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
-            mPen = new Pen(Color.Blue, 1);
+            mPen = new Pen(Color.Blue, 3);
 
             InitializeData(picCanvas);
 
             float side = 0.95f * minMaxXY;
             float sideHalf = 0.5f * side;
             float h = sideHalf * (float)Math.Sqrt(3);
-            float xA, yA, xB, yB, xC, yC, xD, yD;
-            float xA1, yA1, xB1, yB1, xC1, yC1, xD1, yD1;
             float p, q;
 
             q = 0.05f; //5%
             p = 1 - q;  //95%
-            xA = sideHalf;
-            yA = 0;
-            xB = xCenter*2.0f;
-            yB = sideHalf;
-            xC = sideHalf;
-            yC = yCenter*2.0f ;
-            xD = 0;
-            yD = sideHalf;
-
-            for (int i = 0; i < 1; i++)
+            A.X = sideHalf; A.Y = 0;
+            B.X = xCenter * 2; B.Y = sideHalf;
+            C.X = sideHalf; C.Y = yCenter * 2;
+            D.X = 0; D.Y = sideHalf;
+            for (int i = 0; i < 50; i++)
             {
-                mGraph.DrawLine(mPen, iX(xA), iY(yA), iX(xB), iY(yB));
-                mGraph.DrawLine(mPen, iX(xB), iY(yB), iX(xC), iY(yC));
-                mGraph.DrawLine(mPen, iX(xC), iY(yC), iX(xD), iY(yD));
-                mGraph.DrawLine(mPen, iX(xD), iY(yD), iX(xA), iY(yA));
+                mGraph.DrawLine(mPen, iX(A), iX(B));
+                mGraph.DrawLine(mPen, iX(B), iX(C));
+                mGraph.DrawLine(mPen, iX(C), iX(D));
+                mGraph.DrawLine(mPen, iX(D), iX(A));
 
-                xA1 = xA*2.5f;
-                yA1 = yA*2.5f;
-                xB1 = p * xB + q * xC;
-                yB1 = p * yB + q * yC;
-                xC1 = p * xC + q * xA;
-                yC1 = p * yC + q * yA;
-                xD1 = p * xD + q * xD; 
-                yD1 = p * yD + q * yD;
-                xA = xA1; xB = xB1; xC = xC1; xD = xD1;
-                yA = yA1; yB = yB1; yC = yC1; yD = yD1;
+                A1.X = p * A.X + q * B.X;
+                A1.Y = p * A.Y + q * B.Y;
+                B1.X = p * B.X + q * C.X;
+                B1.Y = p * B.Y + q * C.Y;
+                C1.X = p * C.X + q * D.X;
+                C1.Y = p * C.Y + q * D.Y;
+                D1.X = p * D.X + q * A.X;
+                D1.Y = p * D.Y + q * A.Y;
+                A.X = A1.X; B.X = B1.X; C.X = C1.X; D.X = D1.X;
+                A.Y = A1.Y; B.Y = B1.Y; C.Y = C1.Y; D.Y = D1.Y;
             }
 
         }
