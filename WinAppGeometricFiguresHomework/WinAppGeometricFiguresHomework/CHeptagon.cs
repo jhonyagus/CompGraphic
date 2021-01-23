@@ -12,7 +12,7 @@ namespace WinAppGeometricFiguresHomework
     {
         // Datos miembro - Atributos.
         private float mSide, mSegmentA, mSegmentB, mSegmentC, mSegmentD, mSegmentE,mSegmentF, mAngleA, mAngleB, mAngleC;
-        private float mPerimeter, mArea, mApothem;
+        private float mPerimeter, mArea;
 
         // Datos miembro que operan con el modo gráfico.
         private Graphics mGraph;
@@ -28,31 +28,34 @@ namespace WinAppGeometricFiguresHomework
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        // Función que permite leer los tres lados del triángulo.
-        public void ReadData(TextBox txtSideSide)
+        // Función que permite leer el lado del heptágono.
+        public void ReadData(TextBox txtSide)
         {
-            mSide = float.Parse(txtSideSide.Text);
+            try
+            {
+                mSide = float.Parse(txtSide.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido...");
+            }
         }
 
-        // Función que permite calcular el perímetro del triángulo.
+        // Función que permite calcular el perímetro del heptágono.
         public void PerimeterHeptagon()
         {
             mPerimeter = 7 * mSide;
         }
 
-        // Función que permite calcular el área del triángulo.
+        // Función que permite calcular el área del heptágono.
         public void AreaHeptagon()
         {
-            float mAngleC = 64.28f * (float)Math.PI / 180.0f;
-            mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngleC);
-
-            mAngleA = 51.42f * (float)Math.PI / 180.0f;
-            mSegmentB = mSide * (float)Math.Cos(mAngleA);
-
-            mArea = mPerimeter * mApothem / 2.0f;
+            float angle = (2 * (float)Math.PI) / (2 * 7);
+            float a = mSide / (2 * (float)Math.Tan((double)angle));
+            mArea = (mPerimeter * a) / 2;
         }
 
-        // Función que permite imprimir el perímetro y el área del triángulo.
+        // Función que permite imprimir el perímetro y el área del heptágono.
         public void PrintData(TextBox txtPerimeter, TextBox txtArea)
         {
             txtPerimeter.Text = mPerimeter.ToString();
@@ -60,7 +63,7 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite inicializar los datos y controles que operan en 
-        // la GUI del triángulo.
+        // la GUI del heptágono.
         public void InitializeData(TextBox txtSide,
                                    TextBox txtPerimeter,
                                    TextBox txtArea,
@@ -78,7 +81,7 @@ namespace WinAppGeometricFiguresHomework
             picCanvas.Refresh();
         }
 
-        // Función que permite calcular los valores de los ocho vértices del octagono,
+        // Función que permite calcular los valores de los siete vértices del heptágono,
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
@@ -100,8 +103,8 @@ namespace WinAppGeometricFiguresHomework
             mF.X = 2.0f * mSegmentF + mSegmentE; mF.Y = mSegmentA + mSegmentE;
             mG.X = 2.0f * mSegmentB + mSegmentC; mG.Y = mSegmentA;
         }
-        // Función que permite graficar un triángulo en base a los valores de los tres 
-        // vértices representados por tres puntos en un plano.
+        // Función que permite graficar un heptágono en base a los valores de los siete 
+        // vértices representados por siete puntos en un plano.
         public void GraphShape(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();

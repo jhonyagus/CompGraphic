@@ -46,16 +46,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CChessBoard.cs" />
+    <Compile Include="CConcentricSquare.cs" />
+    <Compile Include="CDashedLines.cs" />
     <Compile Include="CDecagon.cs" />
     <Compile Include="CDodecagon.cs" />
     <Compile Include="CHeptagon.cs" />
     <Compile Include="CHexagon.cs" />
+    <Compile Include="CHexagons.cs" />
     <Compile Include="CNonagon.cs" />
     <Compile Include="COctagono.cs" />
     <Compile Include="CPentagon.cs" />
     <Compile Include="CSquare.cs" />
     <Compile Include="CTriangle.cs" />
     <Compile Include="CUndecagon.cs" />
+    <Compile Include="frmChessBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChessBoard.Designer.cs">
+      <DependentUpon>frmChessBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConcentricSquares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConcentricSquares.Designer.cs">
+      <DependentUpon>frmConcentricSquares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashedLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashedLines.Designer.cs">
+      <DependentUpon>frmDashedLines.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDecagono.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +101,12 @@
     </Compile>
     <Compile Include="frmHexagon.Designer.cs">
       <DependentUpon>frmHexagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHexagons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHexagons.Designer.cs">
+      <DependentUpon>frmHexagons.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
@@ -124,6 +152,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmChessBoard.resx">
+      <DependentUpon>frmChessBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConcentricSquares.resx">
+      <DependentUpon>frmConcentricSquares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashedLines.resx">
+      <DependentUpon>frmDashedLines.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDecagono.resx">
       <DependentUpon>frmDecagono.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHexagon.resx">
       <DependentUpon>frmHexagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHexagons.resx">
+      <DependentUpon>frmHexagons.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>

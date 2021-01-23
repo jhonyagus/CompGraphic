@@ -30,32 +30,34 @@ namespace WinAppGeometricFiguresHomework
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        // Función que permite leer los tres lados del triángulo.
-        public void ReadData(TextBox txtSideSide)
+        // Función que permite leer el lado del nonágono.
+        public void ReadData(TextBox txtSide)
         {
-            mSide = float.Parse(txtSideSide.Text);
+            try
+            {
+                mSide = float.Parse(txtSide.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido...");
+            }
         }
 
-        // Función que permite calcular el perímetro del triángulo.
+        // Función que permite calcular el perímetro del nonágono.
         public void PerimeterNonagon()
         {
             mPerimeter = 9 * mSide;
         }
 
-        // Función que permite calcular el área del triángulo.
+        // Función que permite calcular el área del nonágono.
         public void AreaNonagon()
         {
-            //float mAngle3 = 22.5f * (float)Math.PI / 180.0f;
-            //  mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
-
-            //mAngle1 = 45.0f * (float)math.PI / 180.0f;
-            //mSegmentB = mSide * (float)Math.cos(mAngle1);
-            //
-
-            // mArea = mPerimeter * mApothem / 2.0f;
+            float angle = (2 * (float)Math.PI) / (2 * 9);
+            float a = mSide / (2 * (float)Math.Tan((double)angle));
+            mArea = (mPerimeter * a) / 2;
         }
 
-        // Función que permite imprimir el perímetro y el área del triángulo.
+        // Función que permite imprimir el perímetro y el área del nonágono.
         public void PrintData(TextBox txtPerimeter, TextBox txtArea)
         {
             txtPerimeter.Text = mPerimeter.ToString();
@@ -63,7 +65,7 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite inicializar los datos y controles que operan en 
-        // la GUI del triángulo.
+        // la GUI del nonágono.
         public void InitializeData(TextBox txtSide,
                                    TextBox txtPerimeter,
                                    TextBox txtArea,
@@ -81,7 +83,7 @@ namespace WinAppGeometricFiguresHomework
             picCanvas.Refresh();
         }
 
-        // Función que permite calcular los valores de los ocho vértices del octagono,
+        // Función que permite calcular los valores de los nueve vértices del nonágono,
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
@@ -108,8 +110,8 @@ namespace WinAppGeometricFiguresHomework
             mH.X = (2.0f * mSegmentG + 2.0f * mSegmentE) - mSegmentD; mH.Y = mSegmentA;
             mI.X = mSegmentD + mSegmentB + mSide; mI.Y = 0;
         }
-        // Función que permite graficar un triángulo en base a los valores de los tres 
-        // vértices representados por tres puntos en un plano.
+        // Función que permite graficar un nonágono en base a los valores de los nueve 
+        // vértices representados por nueve puntos en un plano.
         public void GraphShape(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();

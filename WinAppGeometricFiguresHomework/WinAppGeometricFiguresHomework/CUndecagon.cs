@@ -14,7 +14,7 @@ namespace WinAppGeometricFiguresHomework
         private float mSide, mSegmentA, mSegmentB, mSegmentC,mSegmentD, mSegmentE,
                       mSegmentF, mSegmentG, mSegmentH, mSegmentI, mSegmentJ,
                       mAngleA, mAngleB, mAngleC, mAngleD, mAngleE;
-        private float mPerimeter, mArea, mApothem;
+        private float mPerimeter, mArea;
 
         // Datos miembro que operan con el modo gráfico.
         private Graphics mGraph;
@@ -30,31 +30,34 @@ namespace WinAppGeometricFiguresHomework
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        // Función que permite leer los tres lados del triángulo.
-        public void ReadData(TextBox txtSideSide)
+        // Función que permite leer el lado del Undecágono
+        public void ReadData(TextBox txtSide)
         {
-            mSide = float.Parse(txtSideSide.Text);
+            try
+            {
+                mSide = float.Parse(txtSide.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido...");
+            }
         }
 
-        // Función que permite calcular el perímetro del triángulo.
+        // Función que permite calcular el perímetro del undecágono.
         public void PerimeterUndecagon()
         {
             mPerimeter = 11 * mSide;
         }
 
-        // Función que permite calcular el área del triángulo.
+        // Función que permite calcular el área del undecágono.
         public void AreaUndecagon()
         {
-            //float mAngle3 = 30.0f * (float)Math.PI / 180.0f;
-            //mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
-
-            //mAngle = 60.0f * (float)Math.PI / 180.0f;
-            //mSegmentB = mSide * (float)Math.Cos(mAngle);
-
-            //mArea = mPerimeter * mApothem / 2.0f;
+            float angle = (2 * (float)Math.PI) / (2 * 11);
+            float a = mSide / (2 * (float)Math.Tan((double)angle));
+            mArea = (mPerimeter * a) / 2;
         }
 
-        // Función que permite imprimir el perímetro y el área del triángulo.
+        // Función que permite imprimir el perímetro y el área del undecágono.
         public void PrintData(TextBox txtPerimeter, TextBox txtArea)
         {
             txtPerimeter.Text = mPerimeter.ToString();
@@ -62,7 +65,7 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite inicializar los datos y controles que operan en 
-        // la GUI del triángulo.
+        // la GUI del undecágono.
         public void InitializeData(TextBox txtSide,
                                    TextBox txtPerimeter,
                                    TextBox txtArea,
@@ -80,7 +83,7 @@ namespace WinAppGeometricFiguresHomework
             picCanvas.Refresh();
         }
 
-        // Función que permite calcular los valores de los ocho vértices del octagono,
+        // Función que permite calcular los valores de los once vértices del undecágono,
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
@@ -112,8 +115,8 @@ namespace WinAppGeometricFiguresHomework
             mJ.X = mA.X + mSide + mSegmentB; mJ.Y = mSegmentA;
             mK.X = mA.X + mSide; mK.Y = 0;
         }
-        // Función que permite graficar un triángulo en base a los valores de los tres 
-        // vértices representados por tres puntos en un plano.
+        // Función que permite graficar un undecágono en base a los valores de los once 
+        // vértices representados por once puntos en un plano.
         public void GraphShape(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();

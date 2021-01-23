@@ -76,5 +76,34 @@ namespace WinAppGeometricFiguresHomework
             frmDodecagono ObjForm = new frmDodecagono();
             ObjForm.Show();
         }
+
+        private void btnChessboard_Click(object sender, EventArgs e)
+        {
+            frmChessBoard ObjForm = new frmChessBoard();
+            ObjForm.Show();
+        }
+
+        private void btnConcentricSquares_Click(object sender, EventArgs e)
+        {
+            frmConcentricSquares ObjForm = new frmConcentricSquares();
+            ObjForm.Show();
+        }
+
+        private void btnDashedLines_Click(object sender, EventArgs e)
+        {
+            frmDashedLines ObjForm = new frmDashedLines();
+            ObjForm.Show();
+        }
+
+        private void btnHexagons_Click(object sender, EventArgs e)
+        {
+            frmHexagons ObjForm = new frmHexagons();
+            ObjForm.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

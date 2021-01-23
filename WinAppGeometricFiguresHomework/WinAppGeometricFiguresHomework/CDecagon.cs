@@ -13,7 +13,7 @@ namespace WinAppGeometricFiguresHomework
         // Datos miembro - Atributos.
         private float mSide, mSegmentA, mSegmentB, mSegmentC,
                       mSegmentD, mAngleA, mAngleB;
-        private float mPerimeter, mArea, mApothem;
+        private float mPerimeter, mArea;
 
         // Datos miembro que operan con el modo gráfico.
         private Graphics mGraph;
@@ -29,32 +29,35 @@ namespace WinAppGeometricFiguresHomework
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        // Función que permite leer los tres lados del triángulo.
+        // Función que permite leer el lado del decágono.
         public void ReadData(TextBox txtSideSide)
         {
-            mSide = float.Parse(txtSideSide.Text);
+            try
+            {
+                mSide = float.Parse(txtSideSide.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido...");
+            }
+            
         }
 
-        // Función que permite calcular el perímetro del triángulo.
+        // Función que permite calcular el perímetro del decágono.
         public void PerimeterDecagon()
         {
             mPerimeter = 10 * mSide;
         }
 
-        // Función que permite calcular el área del triángulo.
+        // Función que permite calcular el área del decágono.
         public void AreaDecagon()
         {
-            //float mAngle3 = 22.5f * (float)Math.PI / 180.0f;
-            //  mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
-
-            //mAngle1 = 45.0f * (float)math.PI / 180.0f;
-            //mSegmentB = mSide * (float)Math.cos(mAngle1);
-            //
-
-            // mArea = mPerimeter * mApothem / 2.0f;
+            float angle = (2 * (float)Math.PI) / (2 * 10);
+            float a = mSide / (2 * (float)Math.Tan((double)angle));
+            mArea = (10 / 2) * mSide * a;
         }
 
-        // Función que permite imprimir el perímetro y el área del triángulo.
+        // Función que permite imprimir el perímetro y el área del decágono.
         public void PrintData(TextBox txtPerimeter, TextBox txtArea)
         {
             txtPerimeter.Text = mPerimeter.ToString();
@@ -62,7 +65,7 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite inicializar los datos y controles que operan en 
-        // la GUI del triángulo.
+        // la GUI del decágono.
         public void InitializeData(TextBox txtSide,
                                    TextBox txtPerimeter,
                                    TextBox txtArea,
@@ -80,7 +83,7 @@ namespace WinAppGeometricFiguresHomework
             picCanvas.Refresh();
         }
 
-        // Función que permite calcular los valores de los ocho vértices del octagono,
+        // Función que permite calcular los valores de los diez vértices del decágono,
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
@@ -104,8 +107,8 @@ namespace WinAppGeometricFiguresHomework
             mI.X = mG.X; mI.Y = mB.Y;
             mJ.X = mA.X + mSide; mJ.Y = 0;
         }
-        // Función que permite graficar un triángulo en base a los valores de los tres 
-        // vértices representados por tres puntos en un plano.
+        // Función que permite graficar un decágono en base a los valores de los diez 
+        // vértices representados por diez puntos en un plano.
         public void GraphShape(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();

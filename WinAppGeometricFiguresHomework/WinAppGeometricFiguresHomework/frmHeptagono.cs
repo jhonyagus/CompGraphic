@@ -22,19 +22,11 @@ namespace WinAppGeometricFiguresHomework
         {
             picCanvas.Refresh();
             ObjHeptagon.ReadData(txtSide);
-            if (float.Parse(txtSide.Text) > 0)
-            {
-                ObjHeptagon.PerimeterHeptagon();
-                ObjHeptagon.AreaHeptagon();
-                ObjHeptagon.PrintData(txtPerimeter, txtArea);
-                ObjHeptagon.GraphShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Error...en el ingreso de datos",
-                             "Mensaje de error");
-            }
-            
+            ObjHeptagon.PerimeterHeptagon();
+            ObjHeptagon.AreaHeptagon();
+            ObjHeptagon.PrintData(txtPerimeter, txtArea);
+            picCanvas.Refresh();
+            ObjHeptagon.GraphShape(picCanvas);
         }
 
         private void btnReset_Click(object sender, EventArgs e)

@@ -33,6 +33,7 @@ namespace WinAppGeometricFiguresHomework
                 ObjCTriangle.PerimeterTriangle();
                 ObjCTriangle.AreaTriangle();
                 ObjCTriangle.PrintData(txtPerimeter, txtArea);
+                picCanvas.Refresh();
                 ObjCTriangle.GraphShape(picCanvas);
             }
             else

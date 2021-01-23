@@ -38,6 +38,11 @@
             this.btnDecagon = new System.Windows.Forms.Button();
             this.btnUndecagon = new System.Windows.Forms.Button();
             this.btnDodecagon = new System.Windows.Forms.Button();
+            this.btnChessboard = new System.Windows.Forms.Button();
+            this.btnConcentricSquares = new System.Windows.Forms.Button();
+            this.btnDashedLines = new System.Windows.Forms.Button();
+            this.btnHexagons = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTriangle
@@ -140,11 +145,66 @@
             this.btnDodecagon.UseVisualStyleBackColor = true;
             this.btnDodecagon.Click += new System.EventHandler(this.btnDodecagon_Click);
             // 
+            // btnChessboard
+            // 
+            this.btnChessboard.Location = new System.Drawing.Point(60, 498);
+            this.btnChessboard.Name = "btnChessboard";
+            this.btnChessboard.Size = new System.Drawing.Size(178, 44);
+            this.btnChessboard.TabIndex = 10;
+            this.btnChessboard.Text = "Chessboard";
+            this.btnChessboard.UseVisualStyleBackColor = true;
+            this.btnChessboard.Click += new System.EventHandler(this.btnChessboard_Click);
+            // 
+            // btnConcentricSquares
+            // 
+            this.btnConcentricSquares.Location = new System.Drawing.Point(265, 26);
+            this.btnConcentricSquares.Name = "btnConcentricSquares";
+            this.btnConcentricSquares.Size = new System.Drawing.Size(168, 41);
+            this.btnConcentricSquares.TabIndex = 11;
+            this.btnConcentricSquares.Text = "Cuadrados Concéntricos";
+            this.btnConcentricSquares.UseVisualStyleBackColor = true;
+            this.btnConcentricSquares.Click += new System.EventHandler(this.btnConcentricSquares_Click);
+            // 
+            // btnDashedLines
+            // 
+            this.btnDashedLines.Location = new System.Drawing.Point(265, 73);
+            this.btnDashedLines.Name = "btnDashedLines";
+            this.btnDashedLines.Size = new System.Drawing.Size(168, 41);
+            this.btnDashedLines.TabIndex = 12;
+            this.btnDashedLines.Text = "Líneas Cortadas";
+            this.btnDashedLines.UseVisualStyleBackColor = true;
+            this.btnDashedLines.Click += new System.EventHandler(this.btnDashedLines_Click);
+            // 
+            // btnHexagons
+            // 
+            this.btnHexagons.Location = new System.Drawing.Point(269, 125);
+            this.btnHexagons.Name = "btnHexagons";
+            this.btnHexagons.Size = new System.Drawing.Size(163, 42);
+            this.btnHexagons.TabIndex = 13;
+            this.btnHexagons.Text = "Hexágonos";
+            this.btnHexagons.UseVisualStyleBackColor = true;
+            this.btnHexagons.Click += new System.EventHandler(this.btnHexagons_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(417, 498);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(50, 42);
+            this.btnExit.TabIndex = 14;
+            this.btnExit.Text = "Salir";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 530);
+            this.ClientSize = new System.Drawing.Size(479, 555);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnHexagons);
+            this.Controls.Add(this.btnDashedLines);
+            this.Controls.Add(this.btnConcentricSquares);
+            this.Controls.Add(this.btnChessboard);
             this.Controls.Add(this.btnDodecagon);
             this.Controls.Add(this.btnUndecagon);
             this.Controls.Add(this.btnDecagon);
@@ -173,6 +233,11 @@
         private System.Windows.Forms.Button btnDecagon;
         private System.Windows.Forms.Button btnUndecagon;
         private System.Windows.Forms.Button btnDodecagon;
+        private System.Windows.Forms.Button btnChessboard;
+        private System.Windows.Forms.Button btnConcentricSquares;
+        private System.Windows.Forms.Button btnDashedLines;
+        private System.Windows.Forms.Button btnHexagons;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

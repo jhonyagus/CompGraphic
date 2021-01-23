@@ -27,19 +27,12 @@ namespace WinAppGeometricFiguresHomework
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            ObjCSquare.ReadData(txtSide);          
-            if (float.Parse(txtSide.Text) > 0)
-            {
-                ObjCSquare.PerimeterSquare();
-                ObjCSquare.AreaSquare();
-                ObjCSquare.PrintData(txtPerimeter, txtArea);
-                ObjCSquare.GraphShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Error...en el ingreso de datos",
-                             "Mensaje de error");
-            }
+            ObjCSquare.ReadData(txtSide);
+            ObjCSquare.PerimeterSquare();
+            ObjCSquare.AreaSquare();
+            ObjCSquare.PrintData(txtPerimeter, txtArea);
+            picCanvas.Refresh();
+            ObjCSquare.GraphShape(picCanvas);
         }
 
         private void btnReset_Click(object sender, EventArgs e)

@@ -18,7 +18,6 @@ namespace WinAppGeometricFiguresHomework
         private Graphics mGraph;
         private Pen mPen;
         private const float SF = 20;
-        //private PointF mN, mS, mM, mP, mR, mQ;
         private PointF mA, mB, mC, mD, mE, mF, mG, mH;
 
         // Funciones miembro - Métodos.
@@ -29,32 +28,34 @@ namespace WinAppGeometricFiguresHomework
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        // Función que permite leer los tres lados del triángulo.
-        public void ReadData(TextBox txtSideSide)
+        // Función que permite leer el lado del octógono.
+        public void ReadData(TextBox txtSide)
         {
-            mSide = float.Parse(txtSideSide.Text);
+            try
+            {
+                mSide = float.Parse(txtSide.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido...");
+            }
         }
 
-        // Función que permite calcular el perímetro del triángulo.
+        // Función que permite calcular el perímetro del octógono.
         public void PerimeterOctagon()
         {
             mPerimeter = 8 * mSide;
         }
 
-        // Función que permite calcular el área del triángulo.
+        // Función que permite calcular el área del octógono.
         public void AreaOctagon()
         {
             float mAngle3 = 22.5f * (float)Math.PI / 180.0f;
             mApothem = (mSide / 2.0f) / (float)Math.Tan(mAngle3);
-
-            //mAngle1 = 45.0f * (float)math.PI / 180.0f;
-            //mSegmentB = mSide * (float)Math.cos(mAngle1);
-            //
-
             mArea = mPerimeter * mApothem / 2.0f;
         }
 
-        // Función que permite imprimir el perímetro y el área del triángulo.
+        // Función que permite imprimir el perímetro y el área del octógono.
         public void PrintData(TextBox txtPerimeter, TextBox txtArea)
         {
             txtPerimeter.Text = mPerimeter.ToString();
@@ -62,7 +63,7 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite inicializar los datos y controles que operan en 
-        // la GUI del triángulo.
+        // la GUI del octógono.
         public void InitializeData(TextBox txtSide,
                                    TextBox txtPerimeter,
                                    TextBox txtArea,
@@ -86,7 +87,6 @@ namespace WinAppGeometricFiguresHomework
         {
             mAngle1 = 45.0f * (float)Math.PI / 180.0f; //convertir a radianes
             mSegmentB = mSide * (float)Math.Cos(mAngle1);
-            //mApothem = mSide * (float)Math.Sin(mAngle1);
 
             mA.X = mSegmentB; mA.Y = 0;
             mB.X = mSide + mSegmentB; mB.Y = 0;
@@ -98,8 +98,8 @@ namespace WinAppGeometricFiguresHomework
             mH.X = 0; mH.Y = mSegmentB;
 
         }
-        // Función que permite graficar un triángulo en base a los valores de los tres 
-        // vértices representados por tres puntos en un plano.
+        // Función que permite graficar un octógono en base a los valores de los ocho 
+        // vértices representados por ocho puntos en un plano.
         public void GraphShape(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();

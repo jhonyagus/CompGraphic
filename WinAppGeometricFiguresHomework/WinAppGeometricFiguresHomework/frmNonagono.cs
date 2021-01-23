@@ -22,19 +22,11 @@ namespace WinAppGeometricFiguresHomework
         {
             picCanvas.Refresh();
             ObjNonagon.ReadData(txtSide);
-            if (float.Parse(txtSide.Text) > 0)
-            {
-                ObjNonagon.PerimeterNonagon();
-                ObjNonagon.AreaNonagon();
-                ObjNonagon.PrintData(txtPerimeter, txtArea);
-                ObjNonagon.GraphShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Error...en el ingreso de datos",
-                             "Mensaje de error");
-            }
-            
+            ObjNonagon.PerimeterNonagon();
+            ObjNonagon.AreaNonagon();
+            ObjNonagon.PrintData(txtPerimeter, txtArea);
+            picCanvas.Refresh();
+            ObjNonagon.GraphShape(picCanvas);
         }
 
         private void btnReset_Click(object sender, EventArgs e)

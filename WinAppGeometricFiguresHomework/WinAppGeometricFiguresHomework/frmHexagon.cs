@@ -27,19 +27,11 @@ namespace WinAppGeometricFiguresHomework
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             ObjHexagon.ReadData(txtSide);
-            if (float.Parse(txtSide.Text) > 0)
-            {
-                //ObjHexagon.PerimeterUndecagon();
-                //ObjHexagon.AreaUndecagon();
-                ObjHexagon.PrintData(txtPerimeter, txtArea);
-                ObjHexagon.GraphShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Error...en el ingreso de datos",
-                             "Mensaje de error");
-            }
-            
+            ObjHexagon.PerimeterHexagon();
+            ObjHexagon.AreaHexagon();
+            ObjHexagon.PrintData(txtPerimeter, txtArea);
+            picCanvas.Refresh();
+            ObjHexagon.GraphShape(picCanvas);
         }
 
         private void btnReset_Click(object sender, EventArgs e)

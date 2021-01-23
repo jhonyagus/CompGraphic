@@ -11,7 +11,7 @@ namespace WinAppGeometricFiguresHomework
     class CPentagon
     {
         // Datos miembro - Atributos.
-        private float mSide, mApothem, mSegmentB, mAngle, mSegmentA, mAngleA, mSegmentC, mSegmentD;
+        private float mSide, mSegmentB, mAngle, mSegmentA, mAngleA, mSegmentC, mSegmentD;
         private float mPerimeter, mArea;
 
         // Datos miembro que operan con el modo gráfico.
@@ -28,25 +28,34 @@ namespace WinAppGeometricFiguresHomework
             mSide = 0.0f; mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        // Función que permite leer los tres lados del triángulo.
-        public void ReadData(TextBox txtSideSide)
+        // Función que permite leer los cinco lados del pentágono.
+        public void ReadData(TextBox txtSide)
         {
-            mSide = float.Parse(txtSideSide.Text);
+            try
+            {
+                mSide = float.Parse(txtSide.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido...");
+            }
         }
 
-        // Función que permite calcular el perímetro del triángulo.
+        // Función que permite calcular el perímetro del pentágono.
         public void PerimeterPentagon()
         {
-
+            mPerimeter = 5.0f * mSide; 
         }
 
-        // Función que permite calcular el área del triángulo.
+        // Función que permite calcular el área del pentágono.
         public void AreaPentagon()
         {
-
+            float angle = (2 * (float)Math.PI) / (2 * 5);
+            float a = mSide / (2 * (float)Math.Tan((double)angle));
+            mArea = (mPerimeter * a) / 2;
         }
 
-        // Función que permite imprimir el perímetro y el área del triángulo.
+        // Función que permite imprimir el perímetro y el área del pentágono.
         public void PrintData(TextBox txtPerimeter, TextBox txtArea)
         {
             txtPerimeter.Text = mPerimeter.ToString();
@@ -54,7 +63,7 @@ namespace WinAppGeometricFiguresHomework
         }
 
         // Función que permite inicializar los datos y controles que operan en 
-        // la GUI del triángulo.
+        // la GUI del pentágono.
         public void InitializeData(TextBox txtSide,
                                    TextBox txtPerimeter,
                                    TextBox txtArea,
@@ -72,7 +81,7 @@ namespace WinAppGeometricFiguresHomework
             picCanvas.Refresh();
         }
 
-        // Función que permite calcular los valores de los tres vértices del triángulo,
+        // Función que permite calcular los valores de los cinco vértices del pentágono,
         // utilizando fórmulas de Geometría Analítica.
         private void CalculateVertex()
         {
@@ -91,8 +100,8 @@ namespace WinAppGeometricFiguresHomework
             
         }
 
-        // Función que permite graficar un triángulo en base a los valores de los tres 
-        // vértices representados por tres puntos en un plano.
+        // Función que permite graficar un pentágono en base a los valores de los cinco 
+        // vértices representados por cinco puntos en un plano.
         public void GraphShape(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();

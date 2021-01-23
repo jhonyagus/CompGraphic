@@ -23,7 +23,6 @@ namespace WinAppGeometricFiguresHomework
         // Objeto pluma que dibuja o escribe en un lienzo.
         private Pen mPen;
 
-        // Funciones miembro - Métodos.
 
         // Constructor sin parámetros.
         public CSquare()
@@ -33,7 +32,14 @@ namespace WinAppGeometricFiguresHomework
 
         public void ReadData(TextBox txtSide)
         {
-            mSide = float.Parse(txtSide.Text);
+            try
+            {
+                mSide = float.Parse(txtSide.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido...");
+            }
         }
 
         public void PerimeterSquare()
