@@ -1,0 +1,9 @@
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.exe.config
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.Form1.resources

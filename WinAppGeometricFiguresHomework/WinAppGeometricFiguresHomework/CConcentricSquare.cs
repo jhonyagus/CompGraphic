@@ -24,6 +24,7 @@ namespace WinAppGeometricFiguresHomework
             mGraph = picCanvas.CreateGraphics();
             mPen = new Pen(Color.Blue, 2);
             mPen1 = new Pen(Color.Red, 2);
+            mGraph.DrawEllipse(mPen, 0, 0, 4*2 * SF, 4*2 * SF);
 
             b = 8.0f;
             for (int i = 0; i<=10; i++)

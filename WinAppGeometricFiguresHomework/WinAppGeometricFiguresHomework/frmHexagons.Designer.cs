@@ -29,25 +29,36 @@
         private void InitializeComponent()
         {
             this.grbGraphic = new System.Windows.Forms.GroupBox();
-            this.grbButtons = new System.Windows.Forms.GroupBox();
-            this.btnDraw = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.picCanvas = new System.Windows.Forms.PictureBox();
+            this.grbButtons = new System.Windows.Forms.GroupBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnDraw = new System.Windows.Forms.Button();
             this.grbGraphic.SuspendLayout();
-            this.grbButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
+            this.grbButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbGraphic
             // 
+            this.grbGraphic.BackColor = System.Drawing.Color.Transparent;
             this.grbGraphic.Controls.Add(this.picCanvas);
-            this.grbGraphic.Location = new System.Drawing.Point(10, 5);
+            this.grbGraphic.Location = new System.Drawing.Point(12, 5);
             this.grbGraphic.Name = "grbGraphic";
-            this.grbGraphic.Size = new System.Drawing.Size(670, 436);
+            this.grbGraphic.Size = new System.Drawing.Size(661, 433);
             this.grbGraphic.TabIndex = 0;
             this.grbGraphic.TabStop = false;
             this.grbGraphic.Text = "Gráfico";
+            // 
+            // picCanvas
+            // 
+            this.picCanvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picCanvas.Location = new System.Drawing.Point(9, 20);
+            this.picCanvas.Name = "picCanvas";
+            this.picCanvas.Size = new System.Drawing.Size(649, 404);
+            this.picCanvas.TabIndex = 0;
+            this.picCanvas.TabStop = false;
+            this.picCanvas.Click += new System.EventHandler(this.picCanvas_Click);
             // 
             // grbButtons
             // 
@@ -60,15 +71,15 @@
             this.grbButtons.TabIndex = 1;
             this.grbButtons.TabStop = false;
             // 
-            // btnDraw
+            // btnExit
             // 
-            this.btnDraw.Location = new System.Drawing.Point(9, 16);
-            this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(84, 23);
-            this.btnDraw.TabIndex = 0;
-            this.btnDraw.Text = "Graficar";
-            this.btnDraw.UseVisualStyleBackColor = true;
-            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
+            this.btnExit.Location = new System.Drawing.Point(9, 74);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(84, 23);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Salir";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnReset
             // 
@@ -80,23 +91,15 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // btnExit
+            // btnDraw
             // 
-            this.btnExit.Location = new System.Drawing.Point(9, 74);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(84, 23);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Salir";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // picCanvas
-            // 
-            this.picCanvas.Location = new System.Drawing.Point(9, 20);
-            this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(649, 404);
-            this.picCanvas.TabIndex = 0;
-            this.picCanvas.TabStop = false;
+            this.btnDraw.Location = new System.Drawing.Point(9, 16);
+            this.btnDraw.Name = "btnDraw";
+            this.btnDraw.Size = new System.Drawing.Size(84, 23);
+            this.btnDraw.TabIndex = 0;
+            this.btnDraw.Text = "Graficar";
+            this.btnDraw.UseVisualStyleBackColor = true;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // frmHexagons
             // 
@@ -108,8 +111,8 @@
             this.Name = "frmHexagons";
             this.Text = "frmHexagons";
             this.grbGraphic.ResumeLayout(false);
-            this.grbButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
+            this.grbButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -64,13 +64,15 @@ namespace WinAppGeometricFiguresHomework
             float h = sideHalf * (float)Math.Sqrt(3);
             float p, q;
 
-            q = 0.05f; //5%
+            q = 0.2f; //5%
             p = 1 - q;  //95%
             A.X = sideHalf; A.Y = 0;
             B.X = xCenter * 2; B.Y = sideHalf;
             C.X = sideHalf; C.Y = yCenter * 2;
             D.X = 0; D.Y = sideHalf;
-            for (int i = 0; i < 50; i++)
+
+
+            for (int i = 0; i < 15; i++)
             {
                 mGraph.DrawLine(mPen, iX(A), iX(B));
                 mGraph.DrawLine(mPen, iX(B), iX(C));

@@ -32,5 +32,12 @@ namespace WinAppGeometricFiguresHomework
         {
             Close();
         }
+
+        private void picCanvas_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs me = (MouseEventArgs)e;
+            Point coordinates = me.Location;
+            Obj.MSide = coordinates.X;
+        }
     }
 }

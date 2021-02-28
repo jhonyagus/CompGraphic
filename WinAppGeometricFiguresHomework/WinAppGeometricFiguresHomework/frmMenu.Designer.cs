@@ -147,7 +147,7 @@
             // 
             // btnChessboard
             // 
-            this.btnChessboard.Location = new System.Drawing.Point(60, 498);
+            this.btnChessboard.Location = new System.Drawing.Point(265, 173);
             this.btnChessboard.Name = "btnChessboard";
             this.btnChessboard.Size = new System.Drawing.Size(178, 44);
             this.btnChessboard.TabIndex = 10;
@@ -159,7 +159,7 @@
             // 
             this.btnConcentricSquares.Location = new System.Drawing.Point(265, 26);
             this.btnConcentricSquares.Name = "btnConcentricSquares";
-            this.btnConcentricSquares.Size = new System.Drawing.Size(168, 41);
+            this.btnConcentricSquares.Size = new System.Drawing.Size(178, 41);
             this.btnConcentricSquares.TabIndex = 11;
             this.btnConcentricSquares.Text = "Cuadrados Concéntricos";
             this.btnConcentricSquares.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             // 
             this.btnDashedLines.Location = new System.Drawing.Point(265, 73);
             this.btnDashedLines.Name = "btnDashedLines";
-            this.btnDashedLines.Size = new System.Drawing.Size(168, 41);
+            this.btnDashedLines.Size = new System.Drawing.Size(178, 41);
             this.btnDashedLines.TabIndex = 12;
             this.btnDashedLines.Text = "Líneas Cortadas";
             this.btnDashedLines.UseVisualStyleBackColor = true;
@@ -177,9 +177,9 @@
             // 
             // btnHexagons
             // 
-            this.btnHexagons.Location = new System.Drawing.Point(269, 125);
+            this.btnHexagons.Location = new System.Drawing.Point(265, 125);
             this.btnHexagons.Name = "btnHexagons";
-            this.btnHexagons.Size = new System.Drawing.Size(163, 42);
+            this.btnHexagons.Size = new System.Drawing.Size(178, 42);
             this.btnHexagons.TabIndex = 13;
             this.btnHexagons.Text = "Hexágonos";
             this.btnHexagons.UseVisualStyleBackColor = true;
@@ -187,7 +187,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(417, 498);
+            this.btnExit.Location = new System.Drawing.Point(393, 448);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(50, 42);
             this.btnExit.TabIndex = 14;
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 555);
+            this.ClientSize = new System.Drawing.Size(469, 502);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnHexagons);
             this.Controls.Add(this.btnDashedLines);
