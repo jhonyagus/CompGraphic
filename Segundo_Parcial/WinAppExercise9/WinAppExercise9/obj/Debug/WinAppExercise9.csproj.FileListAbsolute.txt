@@ -1,0 +1,9 @@
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\bin\Debug\WinAppExercise9.exe.config
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\bin\Debug\WinAppExercise9.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\bin\Debug\WinAppExercise9.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\obj\Debug\WinAppExercise9.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\obj\Debug\WinAppExercise9.Form1.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\obj\Debug\WinAppExercise9.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\obj\Debug\WinAppExercise9.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\obj\Debug\WinAppExercise9.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExercise9\WinAppExercise9\obj\Debug\WinAppExercise9.pdb
