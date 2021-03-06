@@ -90,25 +90,21 @@ namespace WinAppPythagorean_tree
             return (float)Math.Sqrt(Math.Pow((B.X - A.X), 2) + Math.Pow((B.Y - A.Y), 2));
         }
 
-        // Return a scaled version of the vector.
         public VectorF Scale(float scale)
         {
             return this * scale / Length;
         }
 
-        // Make the vector unit length.
         public void Normalize()
         {
             Length = 1;
         }
 
-        // Find the perpendicular vector in the counterclockwise direction.
+        // Encuentra el vector perpendicular en sentido antihorario.
         public VectorF PerpendicularCCW()
         {
             return new VectorF(Y, -X);
         }
-
-        // Find the perpendicular vector in the clockwise direction.
         public VectorF PerpendicularCW()
         {
             return new VectorF(-Y, X);
