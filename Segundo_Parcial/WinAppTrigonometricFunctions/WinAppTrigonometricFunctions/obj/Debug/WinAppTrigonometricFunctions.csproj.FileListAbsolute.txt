@@ -13,3 +13,19 @@ C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTrigono
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmCtgFunction.resources
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmCscFunction.resources
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmSecFunction.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\bin\Debug\WinAppTrigonometricFunctions.exe.config
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\bin\Debug\WinAppTrigonometricFunctions.exe
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\bin\Debug\WinAppTrigonometricFunctions.pdb
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.csprojAssemblyReference.cache
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmCosFunction.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmCscFunction.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmCtgFunction.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmMenu.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmSecFunction.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmSinFunction.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.frmTanFunction.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.Properties.Resources.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.csproj.GenerateResource.cache
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.csproj.CoreCompileInputs.cache
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.exe
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppTrigonometricFunctions\WinAppTrigonometricFunctions\obj\Debug\WinAppTrigonometricFunctions.pdb
