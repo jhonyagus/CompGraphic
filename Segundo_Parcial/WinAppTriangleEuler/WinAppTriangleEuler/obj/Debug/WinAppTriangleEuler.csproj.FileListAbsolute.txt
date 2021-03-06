@@ -7,3 +7,12 @@ C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTriangl
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.csproj.GenerateResource.cache
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.exe
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\bin\Debug\WinAppTriangleEuler.exe.config
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\bin\Debug\WinAppTriangleEuler.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\bin\Debug\WinAppTriangleEuler.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.Form1.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppTriangleEuler\WinAppTriangleEuler\obj\Debug\WinAppTriangleEuler.pdb
