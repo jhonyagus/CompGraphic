@@ -222,6 +222,7 @@ namespace WinAppExamen2P
         //Función que nos permite Graficar la circunferencia de los 9 Puntos.
         public void GraphicFeuerbach(PictureBox picCanvas)
         {
+            
             CRecta EI = new CRecta();
             CRecta DK = new CRecta();
             CRecta AC = new CRecta();
@@ -243,12 +244,15 @@ namespace WinAppExamen2P
             R = DK.Intersection(DK, EI);
             CCircle Circle = new CCircle(R, DistancePoints(R, E));
             Circle.DrawCurve(picCanvas, Center,Color.Gray);
+           
 
         }
 
         //Función que permite graficar los tres puntos de los pie de las alturas
         public void GraphHeightsPoints(PictureBox picCanvas)
         {
+            mGraph = picCanvas.CreateGraphics();
+            
             PointF H3 = new PointF(mP3.X, 0);
             CRecta AC = new CRecta();
             CRecta BH2 = new CRecta();
@@ -267,6 +271,11 @@ namespace WinAppExamen2P
             GraphPoint(picCanvas, AC.Intersection(AC, BH2), Color.Green);
             GraphPoint(picCanvas, AC.Intersection(BC, AH1), Color.Green);
             GraphPoint(picCanvas, H3, Color.Green);
+            mPen = new Pen(Color.Brown, 1.5f);
+            mGraph.DrawLine(mPen, ToPointF(mP2), ToPointF(AC.Intersection(AC, BH2)));
+            mGraph.DrawLine(mPen, ToPointF(mP1), ToPointF(AC.Intersection(BC, AH1)));
+            mGraph.DrawLine(mPen, ToPointF(mP3), ToPointF(new PointF(mP3.X, 0)));
+            GraphPoint(picCanvas,H, Color.Green);
         }
 
         //Función que permite graficar el circulo circunscrito del triangulo
