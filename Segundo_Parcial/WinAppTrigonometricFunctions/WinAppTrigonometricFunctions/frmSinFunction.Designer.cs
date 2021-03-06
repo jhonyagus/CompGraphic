@@ -164,7 +164,7 @@
             this.grbCanvas.Controls.Add(this.picCanvas);
             this.grbCanvas.Location = new System.Drawing.Point(12, 116);
             this.grbCanvas.Name = "grbCanvas";
-            this.grbCanvas.Size = new System.Drawing.Size(467, 330);
+            this.grbCanvas.Size = new System.Drawing.Size(478, 330);
             this.grbCanvas.TabIndex = 14;
             this.grbCanvas.TabStop = false;
             this.grbCanvas.Text = "Gráfico";
@@ -173,7 +173,7 @@
             // 
             this.picCanvas.Location = new System.Drawing.Point(32, 19);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(400, 300);
+            this.picCanvas.Size = new System.Drawing.Size(435, 296);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             // 
@@ -187,7 +187,7 @@
             this.grbTableValues.Controls.Add(this.label12);
             this.grbTableValues.Controls.Add(this.label11);
             this.grbTableValues.Controls.Add(this.label10);
-            this.grbTableValues.Location = new System.Drawing.Point(485, 10);
+            this.grbTableValues.Location = new System.Drawing.Point(496, 12);
             this.grbTableValues.Name = "grbTableValues";
             this.grbTableValues.Size = new System.Drawing.Size(273, 436);
             this.grbTableValues.TabIndex = 15;
@@ -270,7 +270,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 450);
+            this.ClientSize = new System.Drawing.Size(778, 456);
             this.Controls.Add(this.grbOptions);
             this.Controls.Add(this.grbInput);
             this.Controls.Add(this.grbCanvas);

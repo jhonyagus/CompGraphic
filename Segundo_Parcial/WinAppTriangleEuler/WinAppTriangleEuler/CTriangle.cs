@@ -37,6 +37,7 @@ namespace WinAppTriangleEuler
             Center.Y = picCanvas.Height / 2;
         }
 
+        //Funcion que permite encontrar el punto medio entre dos puntos A y B
         public PointF HalfPoint(PointF A, PointF B)
         {
             return new PointF((A.X + B.X) / 2, (A.Y + B.Y) / 2);
@@ -117,7 +118,7 @@ namespace WinAppTriangleEuler
                 return (false);
         }
 
-        // Función que permite calcular el ángulo A del triángulo, utilizando 
+        // Función que permite calcular los angulos del triángulo, utilizando 
         // la Ley de Cosenos.
         private void CalculateAngleA()
         {
@@ -139,12 +140,14 @@ namespace WinAppTriangleEuler
             mP3.Y = mB * (float)Math.Sin(mAngleA);
         }
 
+        //Funcion que permite transformar un punto del mundo real al
+        //mundo de la computacion gráfica
         public PointF ToPointF(PointF V)
         {
             return new PointF((float)V.X * SF + Center.X, (-1) * (float)V.Y * SF + Center.Y);
         }
 
-
+        //Funcion que calcula los puntos del triangulo como el incentro, circuncentro, baricentro y ortocentro.
         public void CalculatePoints()
         {
             float cotA = (float)(Math.Cos(mAngleA) / Math.Sin(mAngleA));
@@ -170,6 +173,7 @@ namespace WinAppTriangleEuler
 
         }
 
+        //Funcion que grafica los ejes coordenados en el picturebox.
         public void GraphAxis(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
@@ -179,6 +183,7 @@ namespace WinAppTriangleEuler
 
         }
 
+        //Funcion que grafica las medianas del triangulo
         public void GraphMedians(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
@@ -189,6 +194,7 @@ namespace WinAppTriangleEuler
 
         }
 
+        //Funcion que grafica las mediatrices de nuestro triangulo
         public void GraphMediatrix(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
@@ -201,6 +207,7 @@ namespace WinAppTriangleEuler
             mGraph.DrawLine(new Pen(Color.Blue, 3), ToPointF(P), ToPointF(mP1));
         }
 
+        //Funcion que grafica las alturas de nuestro triangulo
         public void GraphHeigths(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
@@ -238,11 +245,13 @@ namespace WinAppTriangleEuler
             Circle.DrawCurve(picCanvas, Center);
         }
 
+        //Funcion que calcula la distancia entre dos puntos A y B
         public float DistancePoints(PointF A, PointF B)
         {
             return (float)Math.Sqrt(Math.Pow((B.X - A.X), 2) + Math.Pow((B.Y - A.Y), 2));
         }
 
+        //Funcion que grafica la recta de euler asi como 2 mediatrices, alturas y medianas
         public void GraphEuler(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
@@ -271,6 +280,7 @@ namespace WinAppTriangleEuler
             mGraph.DrawLine(mPen, ToPointF(mP1), ToPointF(AC.Intersection(BC, AH1)));
         }
 
+        //Funcion que grafica los circulos exinscritos.
         public void GraphCircle(PictureBox picCanvas)
         {
             CCircle Circle = new CCircle(I, DistancePoints(I, new PointF(I.X, 0)));
@@ -324,6 +334,7 @@ namespace WinAppTriangleEuler
 
         }
 
+        //Funcion que evalua una funcion lineal (CRecta) y la dibuja
         public void EvaluateFunction(CRecta recta, PictureBox picCanvas)
         {
             float i; // Contador para controlar la función. // i - t(ángulo)

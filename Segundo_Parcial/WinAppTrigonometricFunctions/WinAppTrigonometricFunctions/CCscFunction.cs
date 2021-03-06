@@ -21,7 +21,7 @@ namespace WinAppTrigonometricFunctions
         private const float SF = 20;
         // Pluma para graficar en el lienzo (canvas).
         private Pen ObjPen;
-        // Arreglo de puntos (pixeles) de tipo Estructura Punto Plotante.
+        // Arreglo de puntos (pixeles).
         private ArrayList mP = new ArrayList();
         //private PointF[] mP;
         // Valores de 'x' y de 'y'.
@@ -56,18 +56,12 @@ namespace WinAppTrigonometricFunctions
             // Eje vertical.
             mGraph.DrawLine(ObjPen, 200, 0, 200, 300);
         }
-        //Función para evaluar la función cuadrática.
+        //Función para evaluar la función.
         public void EvaluateFunction(ListBox lstX, ListBox lstY,
             ListBox lstXp, ListBox lstYp, PictureBox picCanvas)
         {
             float i; // Contador para controlar la función. // i - mX
             // Rango (x): [-2PI, 2PI]-> -360,-1; 0; 1-360
-            // h = 15 grados (delta x) 15*PI/180 rad
-            // 1,360 grados hay 24 ptos
-            // -360, -1 grados hay 24 ptos
-            // cero, 1 pto
-            // Total 49 ptos
-            // Cp(200,150
             mP = new ArrayList();
             I1 = -2.0f * (float)Math.PI; I2 = 2.0f * (float)Math.PI;
             for (i = I1; i <= I2; i += 15.0f * (float)Math.PI / 180)
@@ -98,14 +92,17 @@ namespace WinAppTrigonometricFunctions
             }
         }
 
+        //Funcion para graficar las asintotas de la curva
         public void DrawAsimptote(float i, PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();
             ObjPen = new Pen(Color.Red);
+            ObjPen.DashPattern = new float[] { 4, 2, 4, 2 };
             mGraph.DrawLine(ObjPen, (float)(i * SF + 200), 0, (float)(i * SF + 200), 300);
 
         }
 
+        //Funcion que sirve para transformas el arraylist en un arreglo de Puntos.
         public PointF[] transformar()
         {
             PointF[] point = new PointF[mP.Count];
@@ -116,6 +113,7 @@ namespace WinAppTrigonometricFunctions
             return point;
         }
 
+        //Funcion que grafica la curva de la funcion
         public void DrawCurve(PictureBox picCanvas)
         {
             mGraph = picCanvas.CreateGraphics();

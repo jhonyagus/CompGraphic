@@ -7,3 +7,12 @@ C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppPrueba\
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.csproj.GenerateResource.cache
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.exe
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\bin\Debug\WinAppPrueba.exe.config
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\bin\Debug\WinAppPrueba.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\bin\Debug\WinAppPrueba.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.Form1.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPrueba\WinAppPrueba\obj\Debug\WinAppPrueba.pdb

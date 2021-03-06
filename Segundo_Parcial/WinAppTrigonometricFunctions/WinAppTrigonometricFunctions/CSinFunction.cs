@@ -55,19 +55,14 @@ namespace WinAppTrigonometricFunctions
             // Eje vertical.
             mGraph.DrawLine(ObjPen, 200, 0, 200, 300);
         }
-        //Función para evaluar la función cuadrática.
+        //Función para evaluar la función.
         public void EvaluateFunction(ListBox lstX, ListBox lstY,
             ListBox lstXp, ListBox lstYp)
         {
             float i; // Contador para controlar la función. // i - mX
             int j;   // Contador para controlar el arreglo de puntos. // mP[j]: 0,1,...,48
             // Rango (x): [-2PI, 2PI]-> -360,-1; 0; 1-360
-            // h = 15 grados (delta x) 15*PI/180 rad
-            // 1,360 grados hay 24 ptos
-            // -360, -1 grados hay 24 ptos
-            // cero, 1 pto
-            // Total 49 ptos
-            // Cp(200,150)
+           
             I1 = -2.0f * (float)Math.PI; I2 = 2.0f * (float)Math.PI;
             for (i = I1, j = 0; i <= I2; i += 15.0f * (float)Math.PI / 180, j++)
             {

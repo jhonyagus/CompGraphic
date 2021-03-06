@@ -6,3 +6,11 @@ C:\Users\Jhony\Downloads\howto_pythagorean_tree\howto_pythagorean_tree\obj\Debug
 C:\Users\Jhony\Downloads\howto_pythagorean_tree\howto_pythagorean_tree\obj\Debug\WinAppPythagorean_tree.exe
 C:\Users\Jhony\Downloads\howto_pythagorean_tree\howto_pythagorean_tree\obj\Debug\WinAppPythagorean_tree.pdb
 C:\Users\Jhony\Downloads\howto_pythagorean_tree\howto_pythagorean_tree\obj\Debug\WinAppPythagorean_tree.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\bin\Debug\WinAppPythagorean_tree.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\bin\Debug\WinAppPythagorean_tree.pdb
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\obj\Debug\WinAppPythagorean_tree.csprojAssemblyReference.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\obj\Debug\WinAppPythagorean_tree.Form1.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\obj\Debug\WinAppPythagorean_tree.Properties.Resources.resources
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\obj\Debug\WinAppPythagorean_tree.csproj.GenerateResource.cache
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\obj\Debug\WinAppPythagorean_tree.exe
+C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppPythagorean_tree\obj\Debug\WinAppPythagorean_tree.pdb
