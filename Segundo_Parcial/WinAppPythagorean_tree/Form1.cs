@@ -24,7 +24,7 @@ namespace WinAppPythagorean_tree
             
         }
 
-        // Draw the tree.
+        // Se dibuja el arbol.
         private void picCanvas_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.Clear(picCanvas.BackColor);
@@ -50,7 +50,7 @@ namespace WinAppPythagorean_tree
             }
         }
 
-        // Redraw.
+        // Dibujamos otra vez.
         private void parameter_ValueChanged(object sender, EventArgs e)
         {
             picCanvas.Refresh();
@@ -74,11 +74,11 @@ namespace WinAppPythagorean_tree
             return rColor;
         }
 
-        // Recursively draw a binary tree branch.
+        // Dibujado recursivo de cada rama del arbol.
         private void DrawBranch(Graphics gr, Pen pen, SolidBrush brush,
             int depth, PointF ll_corner, VectorF v_base, float alpha)
         { 
-            // Find the box's corners.
+            // Buscar las esquinas de la caja.
             VectorF v_height = v_base.PerpendicularCCW();
             PointF[] points =
             {
@@ -88,47 +88,45 @@ namespace WinAppPythagorean_tree
                 ll_corner + v_height,
             };
 
-            // Draw this box.
+            // Dibuja la caja.
             if (brush != null) { 
                 gr.FillPolygon(brush, points);
             }
             gr.DrawPolygon(pen, points);
 
-            // If depth > 0, draw the attached branches.
+            // Si la profundidad es > 0, dibuja las ramas adjuntas.
             if (depth > 0)
             {
                 // ***********
-                // Left branch
+                // Rama Izq
                 // ***********
-                // Calculate the new side length.
+                // Calcule la nueva longitud del lado.
                 double w1 = v_base.Length * Math.Cos(alpha);
 
-                // Decompose the new base vector in terms of v_base and v_height.
+                // Descompone el nuevo vector base en términos de v_base and v_height.
                 float wb1 = (float)(w1 * Math.Cos(alpha));
                 float wh1 = (float)(w1 * Math.Sin(alpha));
                 VectorF v_base1 = v_base.Scale(wb1) + v_height.Scale(wh1);
                
-                // Find the lower left corner.
+                // Encuentra la esquina inferior izquierda.
                 PointF ll_corner1 = ll_corner + v_height;
 
-                // Draw the left branch.
+                // Dibuja la rama izquierda.
                 DrawBranch(gr, pen, new SolidBrush(RandomColor(brush.Color)), depth - 1, ll_corner1, v_base1, alpha);
 
                 // ************
-                // Right branch
+                // Rama derecha
                 // ************
-                // Calculate the new side length.
+          
                 double beta = Math.PI / 2.0 - alpha;
                 double w2 = v_base.Length * Math.Sin(alpha);
 
-                // Decompose the new base vector in terms of v_base and v_height.
                 float wb2 = (float)(w2 * Math.Cos(beta));
                 float wh2 = (float)(w2 * Math.Sin(beta));
                 VectorF v_base2 = v_base.Scale(wb2) - v_height.Scale(wh2);
 
-                // Find the lower left corner.
                 PointF ll_corner2 = ll_corner1 + v_base1;
-                // Draw the right branch.
+
                 DrawBranch(gr, pen, new SolidBrush(RandomColor(brush.Color)), depth - 1, ll_corner2, v_base2, alpha);
             }
         }
