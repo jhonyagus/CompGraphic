@@ -1,0 +1,10 @@
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\bin\Debug\PythagasTree.exe.config
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\bin\Debug\PythagasTree.exe
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\bin\Debug\PythagasTree.pdb
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\obj\Debug\PythagasTree.csprojAssemblyReference.cache
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\obj\Debug\PythagasTree.Form1.resources
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\obj\Debug\PythagasTree.Properties.Resources.resources
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\obj\Debug\PythagasTree.csproj.GenerateResource.cache
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\obj\Debug\PythagasTree.csproj.CoreCompileInputs.cache
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\obj\Debug\PythagasTree.exe
+C:\Users\picad\source\repos\PythagasTree\PythagasTree\obj\Debug\PythagasTree.pdb

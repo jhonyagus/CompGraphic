@@ -7,6 +7,7 @@ C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.exe
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.pdb
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\2Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.Form1.resources
+<<<<<<< HEAD
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.exe.config
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.exe
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.pdb
@@ -16,3 +17,15 @@ C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Pa
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.csproj.GenerateResource.cache
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.exe
 C:\Users\Jhony\Documents\ESPE\Quinto Semestre\CompGrafica\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.pdb
+=======
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.exe.config
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.exe
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\bin\Debug\WinAppExamen2P.pdb
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.csprojAssemblyReference.cache
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.Form1.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.Properties.Resources.resources
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.csproj.GenerateResource.cache
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.csproj.CoreCompileInputs.cache
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.exe
+C:\Users\picad\Documents\Repos de Git\CompGraphic\Segundo_Parcial\WinAppExamen2P\WinAppTriangleEuler\obj\Debug\WinAppExamen2P.pdb
+>>>>>>> 31932b0fc5402d199baffcd6f11f590c3c9d4007
