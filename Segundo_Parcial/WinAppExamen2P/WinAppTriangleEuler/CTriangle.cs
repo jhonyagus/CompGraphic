@@ -242,6 +242,7 @@ namespace WinAppExamen2P
             DK.Pending1 = -1 / AC.Pending1;
             DK.Ecuation(HalfPoint(BH2.Intersection(BH2, AC), D));
             R = DK.Intersection(DK, EI);
+            GraphPoint(picCanvas, R, Color.Brown);
             CCircle Circle = new CCircle(R, DistancePoints(R, E));
             Circle.DrawCurve(picCanvas, Center,Color.Gray);
            

@@ -252,7 +252,7 @@ namespace WinAppTriangleEuler
         }
 
         //Funcion que grafica la recta de euler asi como 2 mediatrices, alturas y medianas
-        public void GraphEuler(PictureBox picCanvas)
+        public void GraphEuler(PictureBox picCanvas, Label eul)
         {
             mGraph = picCanvas.CreateGraphics();
             mPen = new Pen(Color.LightPink, 3);
@@ -278,6 +278,10 @@ namespace WinAppTriangleEuler
             mPen = new Pen(Color.Green, 3);
             mGraph.DrawLine(mPen, ToPointF(H3), ToPointF(mP3));
             mGraph.DrawLine(mPen, ToPointF(mP1), ToPointF(AC.Intersection(BC, AH1)));
+            CRecta euler = new CRecta();
+            euler.Pending(H, G);
+            euler.Ecuation(H);
+            eul.Text = euler.CA + "X + " + euler.CC + " = Y";
         }
 
         //Funcion que grafica los circulos exinscritos.

@@ -85,7 +85,7 @@ namespace WinAppTriangleEuler
             picCanvas.Refresh();
             ObjCTriangle.GraphAxis(picCanvas);
             ObjCTriangle.GraphShape(picCanvas);
-            ObjCTriangle.GraphEuler(picCanvas);
+            ObjCTriangle.GraphEuler(picCanvas,lblEuler);
         }
 
         private void btnBisectrix_Click(object sender, EventArgs e)

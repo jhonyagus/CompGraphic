@@ -52,6 +52,7 @@
             this.btnMedians = new System.Windows.Forms.Button();
             this.grbGraphics = new System.Windows.Forms.GroupBox();
             this.picCanvas = new System.Windows.Forms.PictureBox();
+            this.lblEuler = new System.Windows.Forms.Label();
             this.grbIn.SuspendLayout();
             this.grbProcess.SuspendLayout();
             this.grbOuts.SuspendLayout();
@@ -293,11 +294,20 @@
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             // 
+            // lblEuler
+            // 
+            this.lblEuler.AutoSize = true;
+            this.lblEuler.Location = new System.Drawing.Point(12, 466);
+            this.lblEuler.Name = "lblEuler";
+            this.lblEuler.Size = new System.Drawing.Size(0, 13);
+            this.lblEuler.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 577);
+            this.Controls.Add(this.lblEuler);
             this.Controls.Add(this.grbGraphics);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbOuts);
@@ -316,6 +326,7 @@
             this.grbGraphics.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -345,6 +356,7 @@
         private System.Windows.Forms.Button btnMedians;
         private System.Windows.Forms.GroupBox grbGraphics;
         private System.Windows.Forms.PictureBox picCanvas;
+        private System.Windows.Forms.Label lblEuler;
     }
 }
 

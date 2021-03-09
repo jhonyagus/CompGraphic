@@ -32,7 +32,7 @@ namespace WinAppPythagorean_tree
 
             try
             {
-                int depth = 8;
+                
                 int length = (int)p1.DistancePoints(p1,p2);
                 float alpha = (float)(45 * Math.PI / 180.0);
                 float root_x = p1.X;
@@ -42,8 +42,8 @@ namespace WinAppPythagorean_tree
 
                 SolidBrush brush = new SolidBrush(Color.DarkCyan);
     
-                DrawBranch(e.Graphics, Pens.Black, brush,
-                    depth, ll_corner, v_base, alpha);
+                DrawTree(e.Graphics, Pens.Black, brush,
+                    8, ll_corner, v_base, alpha);
             }
             catch
             {
@@ -75,7 +75,7 @@ namespace WinAppPythagorean_tree
         }
 
         // Dibujado recursivo de cada rama del arbol.
-        private void DrawBranch(Graphics gr, Pen pen, SolidBrush brush,
+        private void DrawTree(Graphics gr, Pen pen, SolidBrush brush,
             int depth, PointF ll_corner, VectorF v_base, float alpha)
         { 
             // Buscar las esquinas de la caja.
@@ -112,7 +112,7 @@ namespace WinAppPythagorean_tree
                 PointF ll_corner1 = ll_corner + v_height;
 
                 // Dibuja la rama izquierda.
-                DrawBranch(gr, pen, new SolidBrush(RandomColor(brush.Color)), depth - 1, ll_corner1, v_base1, alpha);
+                DrawTree(gr, pen, new SolidBrush(RandomColor(brush.Color)), depth - 1, ll_corner1, v_base1, alpha);
 
                 // ************
                 // Rama derecha
@@ -127,7 +127,7 @@ namespace WinAppPythagorean_tree
 
                 PointF ll_corner2 = ll_corner1 + v_base1;
 
-                DrawBranch(gr, pen, new SolidBrush(RandomColor(brush.Color)), depth - 1, ll_corner2, v_base2, alpha);
+                DrawTree(gr, pen, new SolidBrush(RandomColor(brush.Color)), depth - 1, ll_corner2, v_base2, alpha);
             }
         }
 
