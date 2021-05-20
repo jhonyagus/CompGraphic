@@ -11,8 +11,6 @@ namespace WinAppTrigonometricFunctions
 {
     class CSecFunction
     {
-        // Datos miembro - Atributos de la clase.
-        // Coeficientes numéricos de la ecuación.
         private float mA;
         // Activar el modo gráfico de Windows con GDI+ 
         // GDI+ (Graphic Device Interface with COM+ Technology).
